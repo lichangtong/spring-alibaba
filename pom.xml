@@ -17,6 +17,9 @@
     <properties>
         <spring-web.version>2.2.5.RELEASE</spring-web.version>
         <lombok.version>1.18.12</lombok.version>
+        <spring.alibaba.cloud.version>2.2.1.RELEASE</spring.alibaba.cloud.version>
+        <org.springframework.cloud.version>Hoxton.SR3</org.springframework.cloud.version>
+        <nacos.discovery.version>0.2.2.RELEASE</nacos.discovery.version>
     </properties>
 
     <modules>
@@ -28,14 +31,14 @@
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
-                <version>Hoxton.SR3</version>
+                <version>${org.springframework.cloud.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
             <dependency>
                 <groupId>com.alibaba.cloud</groupId>
                 <artifactId>spring-cloud-alibaba-dependencies</artifactId>
-                <version>2.2.1.RELEASE</version>
+                <version>${spring.alibaba.cloud.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -48,7 +51,7 @@
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
-                <version>0.2.2.RELEASE</version>
+                <version>${nacos.discovery.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
