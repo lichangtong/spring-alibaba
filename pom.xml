@@ -19,12 +19,13 @@
         <lombok.version>1.18.12</lombok.version>
         <spring.alibaba.cloud.version>2.2.1.RELEASE</spring.alibaba.cloud.version>
         <org.springframework.cloud.version>Hoxton.SR3</org.springframework.cloud.version>
-        <nacos.discovery.version>0.2.2.RELEASE</nacos.discovery.version>
+        <nacos.version>0.9.0.RELEASE</nacos.version>
     </properties>
 
     <modules>
         <module>alibaba-nacos-provider-server</module>
         <module>alibaba-nacos-consumer-server</module>
+        <module>alibaba-nacos-gateway</module>
     </modules>
     <dependencyManagement>
         <dependencies>
@@ -51,7 +52,13 @@
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
-                <version>${nacos.discovery.version}</version>
+                <version>${nacos.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+                <version>${spring.alibaba.cloud.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
@@ -61,7 +68,7 @@
             <dependency>
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
-               <version>${lombok.version}</version>
+                <version>${lombok.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
