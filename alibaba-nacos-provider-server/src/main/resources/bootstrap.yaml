@@ -1,0 +1,17 @@
+#server:
+#  port: 8082
+spring:
+  profiles:
+    active: dev
+  application:
+    name: provider-server
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+      config:
+        prefix: ${spring.application.name}
+        server-addr: 127.0.0.1:8848
+        refresh:
+          enabled: true
+        file-extension: yaml
