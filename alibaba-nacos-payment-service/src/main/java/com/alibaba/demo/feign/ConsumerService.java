@@ -1,6 +1,6 @@
 package com.alibaba.demo.feign;
 
-import com.alibaba.demo.entity.User;
+import com.demo.alibaba.entity.User;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.PostMapping;

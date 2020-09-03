@@ -10,7 +10,7 @@
         <module name="gateway" />
         <module name="payment-service" />
         <module name="provider" />
-        <module name="spring-alibaba" />
+        <module name="alibaba-nacos-base-entity" />
         <module name="alibaba-nacos-provider-server" />
         <module name="consumer" />
         <module name="alibaba-nacos-consumer-server" />
@@ -25,6 +25,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="alibaba-nacos-base-entity" options="-parameters" />
       <module name="alibaba-nacos-consumer-server" options="-parameters" />
       <module name="alibaba-nacos-gateway" options="-parameters" />
       <module name="alibaba-nacos-payment-service" options="-parameters" />

@@ -1,5 +1,7 @@
 package com.demo.alibaba.service;
 
+import com.alibaba.fastjson.JSON;
+import com.demo.alibaba.entity.User;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
@@ -8,8 +10,7 @@ import org.springframework.stereotype.Service;
 public class BalanceServiceFallback implements BalanceService {
     @Override
     public String getBalance(Integer id) {
-        /*Balance balance = new Balance(2000L, 2222L, 2222333L, "处理llll");
-        return JSON.toJSONString(balance);*/
-        return null;
+        User user= new User("李四","18513781024","北京");
+        return JSON.toJSONString(user);
     }
 }

@@ -1,7 +1,7 @@
 package com.alibaba.demo.feign;
 
-import com.alibaba.demo.entity.User;
 import com.alibaba.fastjson.JSON;
+import com.demo.alibaba.entity.User;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
