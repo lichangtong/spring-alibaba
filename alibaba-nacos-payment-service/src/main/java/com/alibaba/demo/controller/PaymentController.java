@@ -1,8 +1,9 @@
 package com.alibaba.demo.controller;
 
-import com.alibaba.demo.entity.User;
+
 import com.alibaba.demo.feign.ConsumerService;
 import com.alibaba.fastjson.JSON;
+import com.demo.alibaba.entity.User;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;

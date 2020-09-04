@@ -11,6 +11,7 @@
     <artifactId>alibaba-nacos-base-entity</artifactId>
     <groupId>com.demo.alibaba</groupId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
     <name>alibaba-nacos-base-entity</name>
     <description>公共实体类</description>
     <dependencies>

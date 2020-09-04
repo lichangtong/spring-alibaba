@@ -14,7 +14,6 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.http.server.reactive.ServerHttpRequest;
 import org.springframework.http.server.reactive.ServerHttpRequestDecorator;
-import org.springframework.stereotype.Component;
 import org.springframework.util.CollectionUtils;
 import org.springframework.web.reactive.function.BodyInserter;
 import org.springframework.web.reactive.function.BodyInserters;
@@ -31,7 +30,7 @@ import java.util.Map;
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.stream.Collectors;
 
-@Component
+//@Component
 @Slf4j
 public class ValidateFilter implements GlobalFilter, Ordered {
 
@@ -61,9 +60,10 @@ public class ValidateFilter implements GlobalFilter, Ordered {
 //            System.out.println("key = " + s);
 //        }
 
+
         System.out.println(exchange.getRequest().getMethodValue());
         List<String> token = exchange.getRequest().getHeaders().get("token");
-        if (!CollectionUtils.isEmpty(token) ) {
+        if (!CollectionUtils.isEmpty(token)) {
             System.out.println(token.get(0));
         }
 //        if (StringUtils.isEmpty(token)) {
@@ -79,7 +79,7 @@ public class ValidateFilter implements GlobalFilter, Ordered {
         Mono<String> modifiedBody = serverRequest.bodyToMono(String.class).flatMap(body -> {
 
             if (MediaType.APPLICATION_JSON.isCompatibleWith(mediaType)) {
-                if(JSON.parseObject(body).getString("userName").equals("zhangsan")){
+                if (JSON.parseObject(body).getString("userName").equals("zhangsan")) {
 
 
                     return Mono.empty();

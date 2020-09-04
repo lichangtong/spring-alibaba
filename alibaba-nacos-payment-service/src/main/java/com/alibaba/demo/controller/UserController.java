@@ -1,9 +1,12 @@
 package com.alibaba.demo.controller;
 
-import com.alibaba.demo.entity.User;
 import com.alibaba.demo.feign.ConsumerService;
+import com.demo.alibaba.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import javax.validation.Valid;
 
