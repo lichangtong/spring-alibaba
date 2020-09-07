@@ -22,6 +22,8 @@ import org.springframework.web.server.ServerWebExchange;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
+import java.io.File;
+import java.io.FileOutputStream;
 import java.nio.CharBuffer;
 import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
@@ -60,7 +62,6 @@ public class ValidateFilter implements GlobalFilter, Ordered {
 //            System.out.println("key = " + s);
 //        }
 
-
         System.out.println(exchange.getRequest().getMethodValue());
         List<String> token = exchange.getRequest().getHeaders().get("token");
         if (!CollectionUtils.isEmpty(token)) {
@@ -76,7 +77,9 @@ public class ValidateFilter implements GlobalFilter, Ordered {
         // mediaType
         MediaType mediaType = exchange.getRequest().getHeaders().getContentType();
         // read & modify body
+
         Mono<String> modifiedBody = serverRequest.bodyToMono(String.class).flatMap(body -> {
+
 
             if (MediaType.APPLICATION_JSON.isCompatibleWith(mediaType)) {
                 if (JSON.parseObject(body).getString("userName").equals("zhangsan")) {
@@ -89,7 +92,24 @@ public class ValidateFilter implements GlobalFilter, Ordered {
                 System.out.println("------------------------");
             } else if (MediaType.MULTIPART_FORM_DATA.isCompatibleWith(mediaType)) {
 
-                System.out.println("------------------------");
+//                System.out.println("------------------------"+body);
+                File file = new File("E:/abc/pom.xml");
+
+                byte[] bytes = body.getBytes();
+
+
+
+
+
+
+                try {
+                    FileOutputStream fileOutputStream = new FileOutputStream(file);
+                    fileOutputStream.write(bytes);
+                    fileOutputStream.flush();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+
             } else if (MediaType.APPLICATION_FORM_URLENCODED.isCompatibleWith(mediaType)) {
                 System.out.println("------------------------");
             }
@@ -118,6 +138,8 @@ public class ValidateFilter implements GlobalFilter, Ordered {
 
                 @Override
                 public Flux<DataBuffer> getBody() {
+
+
                     return outputMessage.getBody();
                 }
             };
@@ -127,7 +149,7 @@ public class ValidateFilter implements GlobalFilter, Ordered {
 
     @Override
     public int getOrder() {
-        return 0;
+        return -2000;
     }
 
     private Map<String, Object> decodeBody(String body) {

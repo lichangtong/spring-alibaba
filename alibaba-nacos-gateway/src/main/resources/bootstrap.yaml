@@ -1,7 +1,7 @@
 #server:
 #  port: 8081
 server:
-    path: 127.0.0.1:8848
+  path: 127.0.0.1:8848
 
 spring:
   profiles:
@@ -16,6 +16,7 @@ spring:
         password: 123456
         namespace: 08e0b806-874c-4fb7-afe3-f16e7fdc2086
         group: DEFAULT_GROUP
+        register-enabled: true
       config:
         prefix: ${spring.application.name}
         server-addr: ${server.path}
@@ -25,7 +26,12 @@ spring:
         group: DEFAULT_GROUP
         username: alibaba
         password: 123456
-
+#    gateway:
+#      discovery:
+#        locator:
+#          enabled: true
+#          lower-case-service-id: true
+#      routes:
 
 #demo:
 #  namespace: gateway-dev.yaml
@@ -38,7 +44,7 @@ spring:
 #        locator:
 #          # 让gateway通过服务发现组件找到其他的微服务
 #          enabled: true
-#        ##可以通过小写的服务名称进行访问了
+#        ##可以通过小写的服务名称进行访问了locator
 #        lowerCaseServiceId: true
 #      enabled: true
 #    #    gateway:
@@ -46,12 +52,31 @@ spring:
 #    #        - id: provider-server
 #    #          uri: lb://provider-server
 #    #          predicates:
-#    #            - Path=/provider-server/**
+#    #            - path=/provider-server/**
 #    #        - id: consumer-server
 #    #          uri: lb://consumer-server
 #    #          predicates:
-#    #            - Path=/consumer-server/**
+#    #            - path=/consumer-server/**
 #    #        - id: payment-service
 #    #          uri: lb://payment-service
-##          predicates:
-##            - Path=/payment-service/**
+    ##          predicates:
+    ##            - path=/payment-service/**
+
+
+
+
+
+
+#routes:
+#  - id: provider-server
+#    uri: lb://provider-server
+#    predicates:
+#      - Path=/provider-server/**
+#  - id: consumer-server
+#    uri: lb://consumer-server
+#    predicates:
+#      - Path=/consumer-server/**
+#  - id: payment-service
+#    uri: lb://payment-service
+#    predicates:
+#      - Path=/payment-service/**

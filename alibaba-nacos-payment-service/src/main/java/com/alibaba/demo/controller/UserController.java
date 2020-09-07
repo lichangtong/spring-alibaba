@@ -19,6 +19,6 @@ public class UserController {
 
     @PostMapping(value = "/user")
     public String getUser(@RequestBody @Valid User user) {
-        return consumerService.getUser(user);
+        return consumerService.queryUser(user);
     }
 }

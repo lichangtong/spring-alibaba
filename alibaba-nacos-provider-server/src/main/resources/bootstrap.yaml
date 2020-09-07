@@ -3,6 +3,8 @@
 
 server:
   path: 127.0.0.1:8848
+#  servlet:
+#    context-path: /provider-server
 spring:
   profiles:
     active: dev

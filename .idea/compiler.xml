@@ -10,6 +10,7 @@
         <module name="gateway" />
         <module name="payment-service" />
         <module name="provider" />
+        <module name="alibaba-nacos-user-server" />
         <module name="alibaba-nacos-base-entity" />
         <module name="alibaba-nacos-provider-server" />
         <module name="consumer" />
@@ -30,6 +31,7 @@
       <module name="alibaba-nacos-gateway" options="-parameters" />
       <module name="alibaba-nacos-payment-service" options="-parameters" />
       <module name="alibaba-nacos-provider-server" options="-parameters" />
+      <module name="alibaba-nacos-user-server" options="-parameters" />
       <module name="consumer" options="-parameters" />
       <module name="demo (1)" options="-parameters" />
       <module name="demo (2)" options="-parameters" />

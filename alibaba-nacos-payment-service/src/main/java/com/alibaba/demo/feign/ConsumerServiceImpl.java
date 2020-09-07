@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class ConsumerServiceImpl implements ConsumerService {
     @Override
-    public String getUser(User user) {
+    public String queryUser(User user) {
         log.info("ConsumerService start 服务不可用了，在这里采用降级失败，记录请求信息");
         log.info("request:{}", JSON.toJSONString(user));
         log.info("ConsumerService end");

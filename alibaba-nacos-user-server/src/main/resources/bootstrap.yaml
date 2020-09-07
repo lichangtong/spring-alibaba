@@ -2,16 +2,13 @@
 #  port: 8083
 server:
   path: 127.0.0.1:8848
-# servlet：context-path 这个服务名称在微服务中劲量不要加，如果要加在feignclient 中调用是需要加上这个路径
-# 如 注册中心服务名+服务名+服务方法路径 consumer-server/consumer-server/consumer/user
 #  servlet:
-#    context-path: /consumer-server
-
+#    context-path: /user-server
 spring:
   profiles:
     active: dev
   application:
-    name: consumer-server
+    name: user-server
   cloud:
     nacos:
       discovery:
