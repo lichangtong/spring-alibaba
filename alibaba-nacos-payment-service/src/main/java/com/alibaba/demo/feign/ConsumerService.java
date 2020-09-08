@@ -9,10 +9,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import javax.validation.Valid;
 
 
-@FeignClient(value = "consumer-server", fallback = ConsumerServiceImpl.class)
+@FeignClient(value = "consumer-server",path = "consumer-server/consumer",fallback = ConsumerServiceImpl.class)
 public interface ConsumerService {
 
-    @PostMapping(value = "consumer-server/consumer/user",consumes = MediaType.APPLICATION_JSON_VALUE)
+    @PostMapping(value = "/user",consumes = MediaType.APPLICATION_JSON_VALUE)
     String queryUser(@Valid @RequestBody User user);
 
 }

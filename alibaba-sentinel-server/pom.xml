@@ -6,16 +6,18 @@
         <groupId>com.demo.alibaba</groupId>
         <artifactId>spring-alibaba</artifactId>
         <version>1.0-SNAPSHOT</version>
+        <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.demo.alibaba.provider</groupId>
-    <artifactId>demo</artifactId>
+    <groupId>com.alibaba-demo</groupId>
+    <artifactId>alibaba-sentinel-server</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>alibaba-nacos-provider-server</name>
-    <description>alibaba-nacos-provider-server</description>
+    <name>alibaba-sentinel-server</name>
+    <description>Demo project for Spring Boot</description>
 
     <properties>
         <java.version>1.8</java.version>
     </properties>
+
     <dependencies>
         <dependency>
             <groupId>com.demo.alibaba</groupId>
@@ -39,20 +41,20 @@
             <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-openfeign</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
-        </dependency>
-        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
         </dependency>
     </dependencies>
 

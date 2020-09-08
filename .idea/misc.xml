@@ -17,6 +17,7 @@
         <option value="$PROJECT_DIR$/payment-service/pom.xml" />
         <option value="$PROJECT_DIR$/alibaba-nacos-payment-service/pom.xml" />
         <option value="$PROJECT_DIR$/alibaba-nacos-user-server/pom.xml" />
+        <option value="$PROJECT_DIR$/alibaba-sentinel-server/pom.xml" />
       </list>
     </option>
   </component>
