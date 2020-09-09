@@ -1,7 +1,7 @@
 #server:
 #  port: 8081
 server:
-  path: 127.0.0.1:8848
+  path: 127.0.0.1:8848,127.0.0.1:8849,127.0.0.1:8850
 
 spring:
   profiles:
@@ -26,6 +26,23 @@ spring:
         group: DEFAULT_GROUP
         username: alibaba
         password: 123456
+#        A: 通过spring.cloud.nacos.config.shared-dataids定义的共享配置
+#        B: 通过spring.cloud.nacos.config.ext-config[n]定义的加载配置
+#        C: 通过内部规则（spring.cloud.nacos.config.prefix、spring.cloud.nacos.config.file-extension、spring.cloud.nacos.config.group这几个参数）拼接出来的配置
+#        shared-configs: ## yaml 配置数组方式对象  共享配置 A   后面加载的配置会覆盖之前加载的配置，所以优先级关系是：A < B < C
+#          - dataId: 12312321.yaml
+#            group: DEFAULT_GROUP
+#            refresh: true
+#          - dataId: 12312321.yaml
+#            group: DEFAULT_GROUP
+#            refresh: true
+#        extension-configs: ## yaml 配置数组方式对象 扩展配置 B 后面加载的配置会覆盖之前加载的配置，所以优先级关系是：A < B < C
+#          - dataId: 12312321.yaml
+#            group: DEFAULT_GROUP
+#            refresh: true
+#         - dataId: abcdef.yaml
+#           group: DEFAULT_GROUP
+#           refresh: true
     sentinel:
       transport:
         dashboard: 127.0.0.1:8080 #指定Sentinel DashBoard服务地址

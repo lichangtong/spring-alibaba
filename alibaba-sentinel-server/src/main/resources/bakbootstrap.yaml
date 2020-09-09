@@ -1,7 +1,7 @@
 #server:
 #  port: 8086
 server:
-  path: 127.0.0.1:9848
+  path: 127.0.0.1:8848
 #  servlet:
 #    context-path: /sentinel-server
 spring:
@@ -13,21 +13,19 @@ spring:
     nacos:
       discovery:
         server-addr: ${server.path}
-#        username: alibaba
-#        password: 123456
-#        namespace: 08e0b806-874c-4fb7-afe3-f16e7fdc2086
-        namespace: 070b3ab3-3f1f-406f-a2f0-c44b2f4d2593
+        username: alibaba
+        password: 123456
+        namespace: 08e0b806-874c-4fb7-afe3-f16e7fdc2086
         group: DEFAULT_GROUP
       config:
         prefix: ${spring.application.name}
         server-addr: ${server.path}
         file-extension: yaml
         refresh-enabled: true
-        namespace: 070b3ab3-3f1f-406f-a2f0-c44b2f4d2593
-#        namespace: 08e0b806-874c-4fb7-afe3-f16e7fdc2086
+        namespace: 08e0b806-874c-4fb7-afe3-f16e7fdc2086
         group: DEFAULT_GROUP
-#        username: alibaba
-#        password: 123456
+        username: alibaba
+        password: 123456
     sentinel:
       transport:
         dashboard: 127.0.0.1:8080 #指定Sentinel DashBoard服务地址
@@ -39,10 +37,8 @@ spring:
             groupId: DEFAULT_GROUP
             server-addr: ${server.path}
             data-type: json
-            namespace: 070b3ab3-3f1f-406f-a2f0-c44b2f4d2593
-#            namespace: 08e0b806-874c-4fb7-afe3-f16e7fdc2086
+            namespace: 08e0b806-874c-4fb7-afe3-f16e7fdc2086
             rule-type: flow
-
 
 #        spring.cloud.sentinel.datasource.ds.nacos.server-addr=localhost:8848
 #        spring.cloud.sentinel.datasource.ds.nacos.dataId=${spring.application.name}-sentinel

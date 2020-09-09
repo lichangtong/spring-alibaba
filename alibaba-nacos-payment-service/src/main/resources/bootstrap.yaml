@@ -1,7 +1,7 @@
 #server:
 #  port: 8084
 server:
-  path: 127.0.0.1:8848
+  path: 127.0.0.1:8848,127.0.0.1:8849,127.0.0.1:8850
 
 spring:
   profiles:
