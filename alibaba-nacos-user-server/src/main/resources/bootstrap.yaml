@@ -1,7 +1,13 @@
 #server:
 #  port: 8083
 server:
-  path: 127.0.0.1:8848,127.0.0.1:8849,127.0.0.1:8850
+  path: 127.0.0.1:8848
+  namespace: 08e0b806-874c-4fb7-afe3-f16e7fdc2086
+  group: DEFAULT_GROUP
+  username: alibaba
+  password: 123456
+
+
 #  servlet:
 #    context-path: /user-server
 spring:
@@ -13,20 +19,20 @@ spring:
     nacos:
       discovery:
         server-addr: ${server.path}
-        username: alibaba
-        password: 123456
-        namespace: 08e0b806-874c-4fb7-afe3-f16e7fdc2086
-        group: DEFAULT_GROUP
+        username: ${server.username}
+        password: ${server.password}
+        namespace: ${server.namespace}
+        group: ${server.group}
       config:
         prefix: ${spring.application.name}
         server-addr: ${server.path}
         file-extension: yaml
         refresh-enabled: true
-        namespace: 08e0b806-874c-4fb7-afe3-f16e7fdc2086
-        group: DEFAULT_GROUP
-        username: alibaba
-        password: 123456
-    sentinel:
-      transport:
-        dashboard: 127.0.0.1:8080 #指定Sentinel DashBoard服务地址
-        port: 8719  #默认8719端口，假如被占用会自动从8719开始依次+1扫描，直至找到未被占用的端口
+        namespace: ${server.namespace}
+        group: ${server.group}
+        username: ${server.username}
+        password: ${server.password}
+#    sentinel:
+#      transport:
+#        dashboard: 127.0.0.1:8080 #指定Sentinel DashBoard服务地址
+#        port: 8719  #默认8719端口，假如被占用会自动从8719开始依次+1扫描，直至找到未被占用的端口

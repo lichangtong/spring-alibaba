@@ -20,8 +20,10 @@
         <lombok.version>1.18.12</lombok.version>
         <spring.alibaba.cloud.version>2.2.1.RELEASE</spring.alibaba.cloud.version>
         <org.springframework.cloud.version>Hoxton.SR3</org.springframework.cloud.version>
-<!--        <nacos.version>0.9.0.RELEASE</nacos.version>-->
-<!--        <nacos.version>0.9.0.RELEASE</nacos.version>-->
+        <!--        <nacos.version>0.9.0.RELEASE</nacos.version>-->
+        <!--        <nacos.version>0.9.0.RELEASE</nacos.version>-->
+        <redisson.version>3.13.4</redisson.version>
+        <commons-lang.version>3.11</commons-lang.version>
     </properties>
 
     <modules>
@@ -29,6 +31,7 @@
         <module>alibaba-nacos-consumer-server</module>
         <module>alibaba-nacos-gateway</module>
         <module>alibaba-nacos-base-entity</module>
+        <module>spring-alibaba-common</module>
     </modules>
     <dependencyManagement>
         <dependencies>
@@ -68,7 +71,24 @@
                 <artifactId>lombok</artifactId>
                 <version>${lombok.version}</version>
             </dependency>
+<!--            <dependency>-->
+<!--                <groupId>org.redisson</groupId>-->
+<!--                <artifactId>redisson-spring-boot-starter</artifactId>-->
+<!--                <version>${redisson.version}</version>-->
+<!--            </dependency>-->
+            <dependency>
+                <groupId>org.redisson</groupId>
+                <artifactId>redisson</artifactId>
+                <version>${redisson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>${commons-lang.version}</version>
+            </dependency>
+
         </dependencies>
+
     </dependencyManagement>
     <dependencies>
 

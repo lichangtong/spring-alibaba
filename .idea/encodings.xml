@@ -10,5 +10,6 @@
     <file url="file://$PROJECT_DIR$/alibaba-nacos-provider-server/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/alibaba-nacos-user-server/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/alibaba-sentinel-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-alibaba-common/src/main/java" charset="UTF-8" />
   </component>
 </project>
