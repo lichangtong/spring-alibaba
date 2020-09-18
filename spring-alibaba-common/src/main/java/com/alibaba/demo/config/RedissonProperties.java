@@ -12,10 +12,10 @@ import org.springframework.stereotype.Component;
  * @Author: lichangtong
  * @Date: 2020-09-14 11:05
  */
-@Data
 @Component
-@ConfigurationProperties(prefix = "redisson")
+@Data
 @ToString
+@ConfigurationProperties(prefix = "redisson")
 public class RedissonProperties {
     private int timeout = 3000;
     private String address;

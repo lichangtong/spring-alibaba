@@ -36,3 +36,5 @@ spring:
 #      transport:
 #        dashboard: 127.0.0.1:8080 #指定Sentinel DashBoard服务地址
 #        port: 8719  #默认8719端口，假如被占用会自动从8719开始依次+1扫描，直至找到未被占用的端口
+logging:
+  config: classpath:logback-spring.xml

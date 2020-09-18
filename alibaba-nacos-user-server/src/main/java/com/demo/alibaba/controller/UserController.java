@@ -1,10 +1,9 @@
 package com.demo.alibaba.controller;
 
+import com.alibaba.demo.config.RedissonProperties;
 import com.demo.alibaba.entity.User;
 import com.demo.alibaba.result.ApiResult;
-import com.demo.alibaba.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -20,9 +19,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/user")
 public class UserController {
+    //    @Autowired
+//    @Qualifier("userService")
+//    IUserService userService;
+
     @Autowired
-    @Qualifier("userService")
-    IUserService userService;
+    private RedissonProperties properties;
 
     @PostMapping(value = "/query")
     public ApiResult queryUser() {
@@ -30,9 +32,15 @@ public class UserController {
         apiResult.setMessage("SUCCESS");
         apiResult.setCode(200);
         apiResult.setData(new User("lisi", "13213121314", "北京凯旋"));
-        userService.queryUserById(new User());
-
+//        userService.queryUserById(new User());
+        System.out.println(properties.toString());
 
         return apiResult;
     }
+
+    public String test(RedissonProperties properties) {
+
+        return properties.toString();
+    }
+
 }
