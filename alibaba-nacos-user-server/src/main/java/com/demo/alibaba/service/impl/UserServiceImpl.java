@@ -1,6 +1,6 @@
 package com.demo.alibaba.service.impl;
 
-import com.alibaba.demo.config.RedissonClintUtil;
+import com.demo.alibaba.config.RedissonClintUtil;
 import com.demo.alibaba.entity.User;
 import com.demo.alibaba.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
