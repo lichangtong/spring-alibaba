@@ -17,6 +17,7 @@
     </parent>
     <properties>
         <spring-web.version>2.2.5.RELEASE</spring-web.version>
+        <spring-log.version>2.2.5.RELEASE</spring-log.version>
         <lombok.version>1.18.12</lombok.version>
         <spring.alibaba.cloud.version>2.2.1.RELEASE</spring.alibaba.cloud.version>
         <org.springframework.cloud.version>Hoxton.SR3</org.springframework.cloud.version>
@@ -71,11 +72,11 @@
                 <artifactId>lombok</artifactId>
                 <version>${lombok.version}</version>
             </dependency>
-<!--            <dependency>-->
-<!--                <groupId>org.redisson</groupId>-->
-<!--                <artifactId>redisson-spring-boot-starter</artifactId>-->
-<!--                <version>${redisson.version}</version>-->
-<!--            </dependency>-->
+            <!--            <dependency>-->
+            <!--                <groupId>org.redisson</groupId>-->
+            <!--                <artifactId>redisson-spring-boot-starter</artifactId>-->
+            <!--                <version>${redisson.version}</version>-->
+            <!--            </dependency>-->
             <dependency>
                 <groupId>org.redisson</groupId>
                 <artifactId>redisson</artifactId>
@@ -86,7 +87,11 @@
                 <artifactId>commons-lang3</artifactId>
                 <version>${commons-lang.version}</version>
             </dependency>
-
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-logging</artifactId>
+                <version>${spring-log.version}</version>
+            </dependency>
         </dependencies>
 
     </dependencyManagement>
