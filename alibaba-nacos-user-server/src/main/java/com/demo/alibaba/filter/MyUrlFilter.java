@@ -100,12 +100,10 @@ public class MyUrlFilter implements Filter {
         log.info("客户端请求SIGN：{}", sign);
         log.info("请求方式：{} 请求地址：{}", method, requestUrl);
         CommonsMultipartResolver multipartResolver = new CommonsMultipartResolver();
-        if (CollectionUtils.isNotEmpty(ignoredFilterPath)) {
-            if (ignoredFilterPath.contains(requestUrl)) {
-                log.info("放开请求限制，不做权限校验：{}", requestUrl);
-                filterChain.doFilter(servletRequest, servletResponse);
-                return;
-            }
+        if (CollectionUtils.isNotEmpty(ignoredFilterPath) && ignoredFilterPath.contains(requestUrl)) {
+            log.info("放开请求限制，不做权限校验：{}", requestUrl);
+            filterChain.doFilter(servletRequest, servletResponse);
+            return;
         } else if (multipartResolver.isMultipart(request)) {
             log.info("是否为文件上传request");
             filterChain.doFilter(servletRequest, servletResponse);
@@ -120,30 +118,8 @@ public class MyUrlFilter implements Filter {
                 filterChain.doFilter(myHttp, servletResponse);
             } else {
                 returnResult(servletResponse, "签名验证失败，请确认签名是否正确", 400);
-                return;
             }
         }
-/*
-        if (multipartResolver.isMultipart(request)) {
-            log.info("是否为文件上传request");
-            filterChain.doFilter(servletRequest, servletResponse);
-        } else {
-            log.info("token：{}", token);
-            log.info("sign：{}", sign);
-            boolean conEqual = requestUrl.contentEquals("/user-server/user/query2");
-            log.info("请求内容是否相等：{}", conEqual);
-            if (requestUrl.endsWith("/user-server/user/query2")) {
-                returnResult(servletResponse, request.getRequestURI() + " 不允许访问", 400);
-                return;
-            } else {
-
-                MyHttpServletRequestWrapper myHttp = new MyHttpServletRequestWrapper(request);
-                Map<String, Object> map = getRequestBody(myHttp);
-
-
-                filterChain.doFilter(myHttp, servletResponse);
-            }
-        }*/
     }
 
     @Override
@@ -168,9 +144,13 @@ public class MyUrlFilter implements Filter {
             SortedMap<String, Object> temps = new TreeMap<>();
             temps.putAll(map);
             System.out.println(JSON.toJSONString(temps));
-            String appId = temps.get("appId").toString();
-            Object appIdKey = redissonClient.getBucket(String.format(redisKeyPrefix, appId)).get();
-            return !Objects.isNull(appIdKey);
+            Object appId = temps.get("appId");
+            if (Objects.isNull(appId)) {
+                return false;
+            } else {
+                Object appIdKey = redissonClient.getBucket(String.format(redisKeyPrefix, appId.toString())).get();
+                return !Objects.isNull(appIdKey);
+            }
         }
     }
 
