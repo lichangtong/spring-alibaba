@@ -91,17 +91,9 @@ public class ValidateFilter implements GlobalFilter, Ordered {
             } else if (MediaType.APPLICATION_FORM_URLENCODED.isCompatibleWith(mediaType)) {
                 System.out.println("------------------------");
             } else if (MediaType.MULTIPART_FORM_DATA.isCompatibleWith(mediaType)) {
-
 //                System.out.println("------------------------"+body);
                 File file = new File("E:/abc/pom.xml");
-
                 byte[] bytes = body.getBytes();
-
-
-
-
-
-
                 try {
                     FileOutputStream fileOutputStream = new FileOutputStream(file);
                     fileOutputStream.write(bytes);
