@@ -1,0 +1,291 @@
+2688 [main] INFO  c.a.n.c.c.i.LocalConfigInfoProcessor - LOCAL_SNAPSHOT_PATH:C:\Users\admin\nacos\config
+2744 [main] INFO  c.a.n.client.config.impl.Limiter - limitTime:5.0
+2783 [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[user-server] & group[DEFAULT_GROUP]
+2788 [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[user-server.yaml] & group[DEFAULT_GROUP]
+2793 [main] INFO  c.a.n.client.config.utils.JVMUtil - isMultiInstance:false
+2806 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-user-server-dev.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-user-server.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-user-server,DEFAULT_GROUP'}]
+2829 [main] INFO  c.d.a.AlibabaNacosUserServerApplication - The following profiles are active: dev
+3880 [main] INFO  o.s.c.context.scope.GenericScope - BeanFactory id=cd585d14-488a-3f72-a117-9b6102a9fca8
+4146 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+4377 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration' of type [com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+4796 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+4809 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+4810 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+4810 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+4970 [main] INFO  o.a.c.c.C.[.[.[/user-server] - Initializing Spring embedded WebApplicationContext
+4970 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2106 ms
+5227 [main] INFO  org.redisson.Version - Redisson 3.13.4
+6081 [redisson-netty-2-2] INFO  o.r.c.p.MasterPubSubConnectionPool - 1 connections initialized for /127.0.0.1:6379
+6082 [redisson-netty-2-3] INFO  o.r.c.pool.MasterConnectionPool - 10 connections initialized for /127.0.0.1:6379
+6164 [main] INFO  com.demo.alibaba.filter.MyUrlFilter - MyUrlFilter 初始化了！！！
+6206 [main] WARN  c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+6207 [main] INFO  c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+6213 [main] WARN  c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+6213 [main] INFO  c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+6489 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+6569 [main] INFO  c.a.c.s.SentinelWebAutoConfiguration - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+7056 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+7065 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Property :null
+7065 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Environment :null
+7066 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Property :null
+7846 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+7871 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path '/user-server'
+7877 [main] INFO  com.alibaba.nacos.client.naming - [BEAT] adding beat: {"cluster":"DEFAULT","ip":"192.168.20.240","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":8085,"scheduled":false,"serviceName":"DEFAULT_GROUP@@user-server","stopped":false,"weight":1.0} to beat map.
+7919 [main] INFO  com.alibaba.nacos.client.naming - [REGISTER-SERVICE] 08e0b806-874c-4fb7-afe3-f16e7fdc2086 registering service DEFAULT_GROUP@@user-server with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"192.168.20.240","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":8085,"weight":1.0}
+7930 [main] INFO  c.a.c.n.r.NacosServiceRegistry - nacos registry, DEFAULT_GROUP user-server 192.168.20.240:8085 register finished
+8425 [main] INFO  c.d.a.AlibabaNacosUserServerApplication - Started AlibabaNacosUserServerApplication in 8.13 seconds (JVM running for 10.875)
+8429 [main] INFO  c.a.n.c.config.impl.ClientWorker - [fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] [subscribe] user-server+DEFAULT_GROUP+08e0b806-874c-4fb7-afe3-f16e7fdc2086
+8431 [main] INFO  c.a.n.client.config.impl.CacheData - [fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] [add-listener] ok, tenant=08e0b806-874c-4fb7-afe3-f16e7fdc2086, dataId=user-server, group=DEFAULT_GROUP, cnt=1
+8432 [main] INFO  c.a.n.c.config.impl.ClientWorker - [fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] [subscribe] user-server.yaml+DEFAULT_GROUP+08e0b806-874c-4fb7-afe3-f16e7fdc2086
+8432 [main] INFO  c.a.n.client.config.impl.CacheData - [fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] [add-listener] ok, tenant=08e0b806-874c-4fb7-afe3-f16e7fdc2086, dataId=user-server.yaml, group=DEFAULT_GROUP, cnt=1
+8434 [main] INFO  c.a.n.c.config.impl.ClientWorker - [fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] [subscribe] user-server-dev.yaml+DEFAULT_GROUP+08e0b806-874c-4fb7-afe3-f16e7fdc2086
+8435 [main] INFO  c.a.n.client.config.impl.CacheData - [fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] [add-listener] ok, tenant=08e0b806-874c-4fb7-afe3-f16e7fdc2086, dataId=user-server-dev.yaml, group=DEFAULT_GROUP, cnt=1
+8438 [com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] INFO  c.a.n.c.config.impl.ClientWorker - get changedGroupKeys:[]
+8442 [com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] INFO  c.a.n.c.config.impl.ClientWorker - get changedGroupKeys:[]
+38143 [com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] INFO  c.a.n.c.config.impl.ClientWorker - get changedGroupKeys:[]
+67648 [com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] INFO  c.a.n.c.config.impl.ClientWorker - get changedGroupKeys:[]
+90846 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskScheduler - Shutting down ExecutorService 'Nacso-Watch-Task-Scheduler'
+90849 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - De-registering from Nacos Server now...
+90849 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - [BEAT] removing beat: DEFAULT_GROUP@@user-server:192.168.20.240:8085 from beat map.
+90849 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - [DEREGISTER-SERVICE] 08e0b806-874c-4fb7-afe3-f16e7fdc2086 deregistering service DEFAULT_GROUP@@user-server with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceIdGenerator":"simple","ip":"192.168.20.240","ipDeleteTimeout":30000,"metadata":{},"port":8085,"weight":1.0}
+90855 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - De-registration finished.
+90856 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+91089 [SpringContextShutdownHook] INFO  org.redisson.Version - Redisson 3.13.4
+91122 [redisson-netty-5-2] INFO  o.r.c.p.MasterPubSubConnectionPool - 1 connections initialized for /127.0.0.1:6379
+91123 [redisson-netty-5-3] INFO  o.r.c.pool.MasterConnectionPool - 10 connections initialized for /127.0.0.1:6379
+91126 [SpringContextShutdownHook] INFO  com.demo.alibaba.filter.MyUrlFilter - MyUrlFilter 过滤器销毁了！！！
+2020-09-23 18:05:53|INFO |main|com.alibaba.nacos.client.config.impl.LocalConfigInfoProcessor|195|LOCAL_SNAPSHOT_PATH:C:\Users\admin\nacos\config
+2020-09-23 18:05:53|INFO |main|com.alibaba.nacos.client.config.impl.Limiter|53|limitTime:5.0
+2020-09-23 18:05:53|WARN |main|com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder|87|Ignore the empty nacos configuration and get it based on dataId[user-server] & group[DEFAULT_GROUP]
+2020-09-23 18:05:53|WARN |main|com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder|87|Ignore the empty nacos configuration and get it based on dataId[user-server.yaml] & group[DEFAULT_GROUP]
+2020-09-23 18:05:53|INFO |main|com.alibaba.nacos.client.config.utils.JVMUtil|47|isMultiInstance:false
+2020-09-23 18:05:53|INFO |main|org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration|105|Located property source: [BootstrapPropertySource {name='bootstrapProperties-user-server-dev.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-user-server.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-user-server,DEFAULT_GROUP'}]
+2020-09-23 18:05:53|INFO |main|com.demo.alibaba.AlibabaNacosUserServerApplication|655|The following profiles are active: dev
+2020-09-23 18:05:54|INFO |main|org.springframework.cloud.context.scope.GenericScope|295|BeanFactory id=cd585d14-488a-3f72-a117-9b6102a9fca8
+2020-09-23 18:05:55|INFO |main|org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker|330|Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-23 18:05:55|INFO |main|org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker|330|Bean 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration' of type [com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-23 18:05:55|INFO |main|org.springframework.boot.web.embedded.tomcat.TomcatWebServer|92|Tomcat initialized with port(s): 8085 (http)
+2020-09-23 18:05:55|INFO |main|org.apache.coyote.http11.Http11NioProtocol|173|Initializing ProtocolHandler ["http-nio-8085"]
+2020-09-23 18:05:55|INFO |main|org.apache.catalina.core.StandardService|173|Starting service [Tomcat]
+2020-09-23 18:05:55|INFO |main|org.apache.catalina.core.StandardEngine|173|Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-09-23 18:05:56|INFO |main|org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/user-server]|173|Initializing Spring embedded WebApplicationContext
+2020-09-23 18:05:56|INFO |main|org.springframework.web.context.ContextLoader|284|Root WebApplicationContext: initialization completed in 2193 ms
+2020-09-23 18:05:56|INFO |main|org.redisson.Version|41|Redisson 3.13.4
+2020-09-23 18:05:57|INFO |redisson-netty-2-4|org.redisson.connection.pool.MasterConnectionPool|167|10 connections initialized for /127.0.0.1:6379
+2020-09-23 18:05:57|INFO |redisson-netty-2-3|org.redisson.connection.pool.MasterPubSubConnectionPool|167|1 connections initialized for /127.0.0.1:6379
+2020-09-23 18:05:57|INFO |main|com.demo.alibaba.filter.MyUrlFilter|87|MyUrlFilter 初始化了！！！
+2020-09-23 18:05:57|WARN |main|com.netflix.config.sources.URLConfigurationSource|121|No URLs will be polled as dynamic configuration sources.
+2020-09-23 18:05:57|INFO |main|com.netflix.config.sources.URLConfigurationSource|122|To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-23 18:05:57|WARN |main|com.netflix.config.sources.URLConfigurationSource|121|No URLs will be polled as dynamic configuration sources.
+2020-09-23 18:05:57|INFO |main|com.netflix.config.sources.URLConfigurationSource|122|To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-23 18:05:57|INFO |main|org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor|181|Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-23 18:05:57|INFO |main|com.alibaba.cloud.sentinel.SentinelWebAutoConfiguration|80|[Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+2020-09-23 18:05:58|INFO |main|org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler|181|Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-09-23 18:05:58|INFO |main|com.alibaba.nacos.client.naming|56|initializer namespace from System Property :null
+2020-09-23 18:05:58|INFO |main|com.alibaba.nacos.client.naming|65|initializer namespace from System Environment :null
+2020-09-23 18:05:58|INFO |main|com.alibaba.nacos.client.naming|75|initializer namespace from System Property :null
+2020-09-23 18:05:58|INFO |main|org.apache.coyote.http11.Http11NioProtocol|173|Starting ProtocolHandler ["http-nio-8085"]
+2020-09-23 18:05:58|INFO |main|org.springframework.boot.web.embedded.tomcat.TomcatWebServer|204|Tomcat started on port(s): 8085 (http) with context path '/user-server'
+2020-09-23 18:05:58|INFO |main|com.alibaba.nacos.client.naming|66|[BEAT] adding beat: {"cluster":"DEFAULT","ip":"192.168.20.240","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":8085,"scheduled":false,"serviceName":"DEFAULT_GROUP@@user-server","stopped":false,"weight":1.0} to beat map.
+2020-09-23 18:05:59|INFO |main|com.alibaba.nacos.client.naming|196|[REGISTER-SERVICE] 08e0b806-874c-4fb7-afe3-f16e7fdc2086 registering service DEFAULT_GROUP@@user-server with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"192.168.20.240","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":8085,"weight":1.0}
+2020-09-23 18:05:59|INFO |main|com.alibaba.cloud.nacos.registry.NacosServiceRegistry|65|nacos registry, DEFAULT_GROUP user-server 192.168.20.240:8085 register finished
+2020-09-23 18:05:59|INFO |main|com.demo.alibaba.AlibabaNacosUserServerApplication|61|Started AlibabaNacosUserServerApplication in 8.461 seconds (JVM running for 10.391)
+2020-09-23 18:05:59|INFO |main|com.alibaba.nacos.client.config.impl.ClientWorker|197|[fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] [subscribe] user-server+DEFAULT_GROUP+08e0b806-874c-4fb7-afe3-f16e7fdc2086
+2020-09-23 18:05:59|INFO |main|com.alibaba.nacos.client.config.impl.CacheData|92|[fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] [add-listener] ok, tenant=08e0b806-874c-4fb7-afe3-f16e7fdc2086, dataId=user-server, group=DEFAULT_GROUP, cnt=1
+2020-09-23 18:05:59|INFO |main|com.alibaba.nacos.client.config.impl.ClientWorker|197|[fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] [subscribe] user-server.yaml+DEFAULT_GROUP+08e0b806-874c-4fb7-afe3-f16e7fdc2086
+2020-09-23 18:05:59|INFO |main|com.alibaba.nacos.client.config.impl.CacheData|92|[fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] [add-listener] ok, tenant=08e0b806-874c-4fb7-afe3-f16e7fdc2086, dataId=user-server.yaml, group=DEFAULT_GROUP, cnt=1
+2020-09-23 18:05:59|INFO |main|com.alibaba.nacos.client.config.impl.ClientWorker|197|[fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] [subscribe] user-server-dev.yaml+DEFAULT_GROUP+08e0b806-874c-4fb7-afe3-f16e7fdc2086
+2020-09-23 18:05:59|INFO |main|com.alibaba.nacos.client.config.impl.CacheData|92|[fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] [add-listener] ok, tenant=08e0b806-874c-4fb7-afe3-f16e7fdc2086, dataId=user-server-dev.yaml, group=DEFAULT_GROUP, cnt=1
+2020-09-23 18:05:59|INFO |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086|com.alibaba.nacos.client.config.impl.ClientWorker|522|get changedGroupKeys:[]
+2020-09-23 18:06:29|INFO |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086|com.alibaba.nacos.client.config.impl.ClientWorker|522|get changedGroupKeys:[]
+2020-09-23 18:06:58|INFO |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086|com.alibaba.nacos.client.config.impl.ClientWorker|522|get changedGroupKeys:[]
+2020-09-23 18:07:28|INFO |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086|com.alibaba.nacos.client.config.impl.ClientWorker|522|get changedGroupKeys:[]
+2020-09-23 18:07:28|INFO |SpringContextShutdownHook|org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler|218|Shutting down ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-09-23 18:07:28|INFO |SpringContextShutdownHook|com.alibaba.cloud.nacos.registry.NacosServiceRegistry|80|De-registering from Nacos Server now...
+2020-09-23 18:07:28|INFO |SpringContextShutdownHook|com.alibaba.nacos.client.naming|79|[BEAT] removing beat: DEFAULT_GROUP@@user-server:192.168.20.240:8085 from beat map.
+2020-09-23 18:07:28|INFO |SpringContextShutdownHook|com.alibaba.nacos.client.naming|218|[DEREGISTER-SERVICE] 08e0b806-874c-4fb7-afe3-f16e7fdc2086 deregistering service DEFAULT_GROUP@@user-server with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceIdGenerator":"simple","ip":"192.168.20.240","ipDeleteTimeout":30000,"metadata":{},"port":8085,"weight":1.0}
+2020-09-23 18:07:28|INFO |SpringContextShutdownHook|com.alibaba.cloud.nacos.registry.NacosServiceRegistry|100|De-registration finished.
+2020-09-23 18:07:28|INFO |SpringContextShutdownHook|org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor|218|Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-23 18:07:28|INFO |SpringContextShutdownHook|org.redisson.Version|41|Redisson 3.13.4
+2020-09-23 18:07:28|INFO |redisson-netty-5-3|org.redisson.connection.pool.MasterPubSubConnectionPool|167|1 connections initialized for /127.0.0.1:6379
+2020-09-23 18:07:28|INFO |redisson-netty-5-1|org.redisson.connection.pool.MasterConnectionPool|167|10 connections initialized for /127.0.0.1:6379
+2020-09-23 18:07:28|INFO |SpringContextShutdownHook|com.demo.alibaba.filter.MyUrlFilter|124|MyUrlFilter 过滤器销毁了！！！
+2020-09-23 18:07:35| INFO | main| com.alibaba.nacos.client.config.impl.LocalConfigInfoProcessor| 195| LOCAL_SNAPSHOT_PATH:C:\Users\admin\nacos\config
+2020-09-23 18:07:35| INFO | main| com.alibaba.nacos.client.config.impl.Limiter| 53| limitTime:5.0
+2020-09-23 18:07:35| WARN | main| com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder| 87| Ignore the empty nacos configuration and get it based on dataId[user-server] & group[DEFAULT_GROUP]
+2020-09-23 18:07:35| WARN | main| com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder| 87| Ignore the empty nacos configuration and get it based on dataId[user-server.yaml] & group[DEFAULT_GROUP]
+2020-09-23 18:07:35| INFO | main| com.alibaba.nacos.client.config.utils.JVMUtil| 47| isMultiInstance:false
+2020-09-23 18:07:35| INFO | main| org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration| 105| Located property source: [BootstrapPropertySource {name='bootstrapProperties-user-server-dev.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-user-server.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-user-server,DEFAULT_GROUP'}]
+2020-09-23 18:07:35| INFO | main| com.demo.alibaba.AlibabaNacosUserServerApplication| 655| The following profiles are active: dev
+2020-09-23 18:07:36| INFO | main| org.springframework.cloud.context.scope.GenericScope| 295| BeanFactory id=cd585d14-488a-3f72-a117-9b6102a9fca8
+2020-09-23 18:07:36| INFO | main| org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker| 330| Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-23 18:07:37| INFO | main| org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker| 330| Bean 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration' of type [com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-23 18:07:37| INFO | main| org.springframework.boot.web.embedded.tomcat.TomcatWebServer| 92| Tomcat initialized with port(s): 8085 (http)
+2020-09-23 18:07:37| INFO | main| org.apache.coyote.http11.Http11NioProtocol| 173| Initializing ProtocolHandler ["http-nio-8085"]
+2020-09-23 18:07:37| INFO | main| org.apache.catalina.core.StandardService| 173| Starting service [Tomcat]
+2020-09-23 18:07:37| INFO | main| org.apache.catalina.core.StandardEngine| 173| Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-09-23 18:07:37| INFO | main| org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/user-server]| 173| Initializing Spring embedded WebApplicationContext
+2020-09-23 18:07:37| INFO | main| org.springframework.web.context.ContextLoader| 284| Root WebApplicationContext: initialization completed in 1887 ms
+2020-09-23 18:07:37| INFO | main| org.redisson.Version| 41| Redisson 3.13.4
+2020-09-23 18:07:38| INFO | redisson-netty-2-4| org.redisson.connection.pool.MasterConnectionPool| 167| 10 connections initialized for /127.0.0.1:6379
+2020-09-23 18:07:38| INFO | redisson-netty-2-3| org.redisson.connection.pool.MasterPubSubConnectionPool| 167| 1 connections initialized for /127.0.0.1:6379
+2020-09-23 18:07:38| INFO | main| com.demo.alibaba.filter.MyUrlFilter| 87| MyUrlFilter 初始化了！！！
+2020-09-23 18:07:38| WARN | main| com.netflix.config.sources.URLConfigurationSource| 121| No URLs will be polled as dynamic configuration sources.
+2020-09-23 18:07:38| INFO | main| com.netflix.config.sources.URLConfigurationSource| 122| To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-23 18:07:38| WARN | main| com.netflix.config.sources.URLConfigurationSource| 121| No URLs will be polled as dynamic configuration sources.
+2020-09-23 18:07:38| INFO | main| com.netflix.config.sources.URLConfigurationSource| 122| To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-23 18:07:39| INFO | main| org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor| 181| Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-23 18:07:39| INFO | main| com.alibaba.cloud.sentinel.SentinelWebAutoConfiguration| 80| [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+2020-09-23 18:07:39| INFO | main| org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler| 181| Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-09-23 18:07:39| INFO | main| com.alibaba.nacos.client.naming| 56| initializer namespace from System Property :null
+2020-09-23 18:07:39| INFO | main| com.alibaba.nacos.client.naming| 65| initializer namespace from System Environment :null
+2020-09-23 18:07:39| INFO | main| com.alibaba.nacos.client.naming| 75| initializer namespace from System Property :null
+2020-09-23 18:07:40| INFO | main| org.apache.coyote.http11.Http11NioProtocol| 173| Starting ProtocolHandler ["http-nio-8085"]
+2020-09-23 18:07:40| INFO | main| org.springframework.boot.web.embedded.tomcat.TomcatWebServer| 204| Tomcat started on port(s): 8085 (http) with context path '/user-server'
+2020-09-23 18:07:40| INFO | main| com.alibaba.nacos.client.naming| 66| [BEAT] adding beat: {"cluster":"DEFAULT","ip":"192.168.20.240","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":8085,"scheduled":false,"serviceName":"DEFAULT_GROUP@@user-server","stopped":false,"weight":1.0} to beat map.
+2020-09-23 18:07:40| INFO | main| com.alibaba.nacos.client.naming| 196| [REGISTER-SERVICE] 08e0b806-874c-4fb7-afe3-f16e7fdc2086 registering service DEFAULT_GROUP@@user-server with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"192.168.20.240","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":8085,"weight":1.0}
+2020-09-23 18:07:40| INFO | main| com.alibaba.cloud.nacos.registry.NacosServiceRegistry| 65| nacos registry, DEFAULT_GROUP user-server 192.168.20.240:8085 register finished
+2020-09-23 18:07:40| INFO | main| com.demo.alibaba.AlibabaNacosUserServerApplication| 61| Started AlibabaNacosUserServerApplication in 8.027 seconds (JVM running for 9.663)
+2020-09-23 18:07:40| INFO | main| com.alibaba.nacos.client.config.impl.ClientWorker| 197| [fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] [subscribe] user-server+DEFAULT_GROUP+08e0b806-874c-4fb7-afe3-f16e7fdc2086
+2020-09-23 18:07:40| INFO | main| com.alibaba.nacos.client.config.impl.CacheData| 92| [fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] [add-listener] ok, tenant=08e0b806-874c-4fb7-afe3-f16e7fdc2086, dataId=user-server, group=DEFAULT_GROUP, cnt=1
+2020-09-23 18:07:40| INFO | main| com.alibaba.nacos.client.config.impl.ClientWorker| 197| [fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] [subscribe] user-server.yaml+DEFAULT_GROUP+08e0b806-874c-4fb7-afe3-f16e7fdc2086
+2020-09-23 18:07:40| INFO | main| com.alibaba.nacos.client.config.impl.CacheData| 92| [fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] [add-listener] ok, tenant=08e0b806-874c-4fb7-afe3-f16e7fdc2086, dataId=user-server.yaml, group=DEFAULT_GROUP, cnt=1
+2020-09-23 18:07:40| INFO | main| com.alibaba.nacos.client.config.impl.ClientWorker| 197| [fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] [subscribe] user-server-dev.yaml+DEFAULT_GROUP+08e0b806-874c-4fb7-afe3-f16e7fdc2086
+2020-09-23 18:07:40| INFO | main| com.alibaba.nacos.client.config.impl.CacheData| 92| [fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] [add-listener] ok, tenant=08e0b806-874c-4fb7-afe3-f16e7fdc2086, dataId=user-server-dev.yaml, group=DEFAULT_GROUP, cnt=1
+2020-09-23 18:07:40| INFO | com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086| com.alibaba.nacos.client.config.impl.ClientWorker| 522| get changedGroupKeys:[]
+2020-09-23 18:08:04| INFO | SpringContextShutdownHook| org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler| 218| Shutting down ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-09-23 18:08:04| INFO | SpringContextShutdownHook| com.alibaba.cloud.nacos.registry.NacosServiceRegistry| 80| De-registering from Nacos Server now...
+2020-09-23 18:08:04| INFO | SpringContextShutdownHook| com.alibaba.nacos.client.naming| 79| [BEAT] removing beat: DEFAULT_GROUP@@user-server:192.168.20.240:8085 from beat map.
+2020-09-23 18:08:04| INFO | SpringContextShutdownHook| com.alibaba.nacos.client.naming| 218| [DEREGISTER-SERVICE] 08e0b806-874c-4fb7-afe3-f16e7fdc2086 deregistering service DEFAULT_GROUP@@user-server with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceIdGenerator":"simple","ip":"192.168.20.240","ipDeleteTimeout":30000,"metadata":{},"port":8085,"weight":1.0}
+2020-09-23 18:08:04| INFO | SpringContextShutdownHook| com.alibaba.cloud.nacos.registry.NacosServiceRegistry| 100| De-registration finished.
+2020-09-23 18:08:04| INFO | SpringContextShutdownHook| org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor| 218| Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-23 18:08:04| INFO | SpringContextShutdownHook| org.redisson.Version| 41| Redisson 3.13.4
+2020-09-23 18:08:04| INFO | redisson-netty-5-4| org.redisson.connection.pool.MasterPubSubConnectionPool| 167| 1 connections initialized for /127.0.0.1:6379
+2020-09-23 18:08:04| INFO | redisson-netty-5-3| org.redisson.connection.pool.MasterConnectionPool| 167| 10 connections initialized for /127.0.0.1:6379
+2020-09-23 18:08:04| INFO | SpringContextShutdownHook| com.demo.alibaba.filter.MyUrlFilter| 124| MyUrlFilter 过滤器销毁了！！！
+2020-09-23 18:08:11| INFO | main| com.alibaba.nacos.client.config.impl.LocalConfigInfoProcessor| 195| LOCAL_SNAPSHOT_PATH:C:\Users\admin\nacos\config
+2020-09-23 18:08:11| INFO | main| com.alibaba.nacos.client.config.impl.Limiter| 53| limitTime:5.0
+2020-09-23 18:08:11| WARN | main| com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder| 87| Ignore the empty nacos configuration and get it based on dataId[user-server] & group[DEFAULT_GROUP]
+2020-09-23 18:08:11| WARN | main| com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder| 87| Ignore the empty nacos configuration and get it based on dataId[user-server.yaml] & group[DEFAULT_GROUP]
+2020-09-23 18:08:11| INFO | main| com.alibaba.nacos.client.config.utils.JVMUtil| 47| isMultiInstance:false
+2020-09-23 18:08:11| INFO | main| org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration| 105| Located property source: [BootstrapPropertySource {name='bootstrapProperties-user-server-dev.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-user-server.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-user-server,DEFAULT_GROUP'}]
+2020-09-23 18:08:11| INFO | main| com.demo.alibaba.AlibabaNacosUserServerApplication| 655| The following profiles are active: dev
+2020-09-23 18:08:12| INFO | main| org.springframework.cloud.context.scope.GenericScope| 295| BeanFactory id=cd585d14-488a-3f72-a117-9b6102a9fca8
+2020-09-23 18:08:12| INFO | main| org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker| 330| Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-23 18:08:12| INFO | main| org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker| 330| Bean 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration' of type [com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-23 18:08:13| INFO | main| org.springframework.boot.web.embedded.tomcat.TomcatWebServer| 92| Tomcat initialized with port(s): 8085 (http)
+2020-09-23 18:08:13| INFO | main| org.apache.coyote.http11.Http11NioProtocol| 173| Initializing ProtocolHandler ["http-nio-8085"]
+2020-09-23 18:08:13| INFO | main| org.apache.catalina.core.StandardService| 173| Starting service [Tomcat]
+2020-09-23 18:08:13| INFO | main| org.apache.catalina.core.StandardEngine| 173| Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-09-23 18:08:13| INFO | main| org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/user-server]| 173| Initializing Spring embedded WebApplicationContext
+2020-09-23 18:08:13| INFO | main| org.springframework.web.context.ContextLoader| 284| Root WebApplicationContext: initialization completed in 1983 ms
+2020-09-23 18:08:13| INFO | main| org.redisson.Version| 41| Redisson 3.13.4
+2020-09-23 18:08:14| INFO | redisson-netty-2-4| org.redisson.connection.pool.MasterConnectionPool| 167| 10 connections initialized for /127.0.0.1:6379
+2020-09-23 18:08:14| INFO | redisson-netty-2-3| org.redisson.connection.pool.MasterPubSubConnectionPool| 167| 1 connections initialized for /127.0.0.1:6379
+2020-09-23 18:08:14| INFO | main| com.demo.alibaba.filter.MyUrlFilter| 87| MyUrlFilter 初始化了！！！
+2020-09-23 18:08:14| WARN | main| com.netflix.config.sources.URLConfigurationSource| 121| No URLs will be polled as dynamic configuration sources.
+2020-09-23 18:08:14| INFO | main| com.netflix.config.sources.URLConfigurationSource| 122| To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-23 18:08:14| WARN | main| com.netflix.config.sources.URLConfigurationSource| 121| No URLs will be polled as dynamic configuration sources.
+2020-09-23 18:08:14| INFO | main| com.netflix.config.sources.URLConfigurationSource| 122| To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-23 18:08:14| INFO | main| org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor| 181| Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-23 18:08:14| INFO | main| com.alibaba.cloud.sentinel.SentinelWebAutoConfiguration| 80| [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+2020-09-23 18:08:15| INFO | main| org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler| 181| Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-09-23 18:08:15| INFO | main| com.alibaba.nacos.client.naming| 56| initializer namespace from System Property :null
+2020-09-23 18:08:15| INFO | main| com.alibaba.nacos.client.naming| 65| initializer namespace from System Environment :null
+2020-09-23 18:08:15| INFO | main| com.alibaba.nacos.client.naming| 75| initializer namespace from System Property :null
+2020-09-23 18:08:16| INFO | main| org.apache.coyote.http11.Http11NioProtocol| 173| Starting ProtocolHandler ["http-nio-8085"]
+2020-09-23 18:08:16| INFO | main| org.springframework.boot.web.embedded.tomcat.TomcatWebServer| 204| Tomcat started on port(s): 8085 (http) with context path '/user-server'
+2020-09-23 18:08:16| INFO | main| com.alibaba.nacos.client.naming| 66| [BEAT] adding beat: {"cluster":"DEFAULT","ip":"192.168.20.240","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":8085,"scheduled":false,"serviceName":"DEFAULT_GROUP@@user-server","stopped":false,"weight":1.0} to beat map.
+2020-09-23 18:08:16| INFO | main| com.alibaba.nacos.client.naming| 196| [REGISTER-SERVICE] 08e0b806-874c-4fb7-afe3-f16e7fdc2086 registering service DEFAULT_GROUP@@user-server with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"192.168.20.240","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":8085,"weight":1.0}
+2020-09-23 18:08:16| INFO | main| com.alibaba.cloud.nacos.registry.NacosServiceRegistry| 65| nacos registry, DEFAULT_GROUP user-server 192.168.20.240:8085 register finished
+2020-09-23 18:08:16| INFO | main| com.demo.alibaba.AlibabaNacosUserServerApplication| 61| Started AlibabaNacosUserServerApplication in 8.087 seconds (JVM running for 9.564)
+2020-09-23 18:08:16| INFO | main| com.alibaba.nacos.client.config.impl.ClientWorker| 197| [fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] [subscribe] user-server+DEFAULT_GROUP+08e0b806-874c-4fb7-afe3-f16e7fdc2086
+2020-09-23 18:08:16| INFO | main| com.alibaba.nacos.client.config.impl.CacheData| 92| [fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] [add-listener] ok, tenant=08e0b806-874c-4fb7-afe3-f16e7fdc2086, dataId=user-server, group=DEFAULT_GROUP, cnt=1
+2020-09-23 18:08:16| INFO | main| com.alibaba.nacos.client.config.impl.ClientWorker| 197| [fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] [subscribe] user-server.yaml+DEFAULT_GROUP+08e0b806-874c-4fb7-afe3-f16e7fdc2086
+2020-09-23 18:08:16| INFO | main| com.alibaba.nacos.client.config.impl.CacheData| 92| [fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] [add-listener] ok, tenant=08e0b806-874c-4fb7-afe3-f16e7fdc2086, dataId=user-server.yaml, group=DEFAULT_GROUP, cnt=1
+2020-09-23 18:08:16| INFO | main| com.alibaba.nacos.client.config.impl.ClientWorker| 197| [fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] [subscribe] user-server-dev.yaml+DEFAULT_GROUP+08e0b806-874c-4fb7-afe3-f16e7fdc2086
+2020-09-23 18:08:16| INFO | main| com.alibaba.nacos.client.config.impl.CacheData| 92| [fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] [add-listener] ok, tenant=08e0b806-874c-4fb7-afe3-f16e7fdc2086, dataId=user-server-dev.yaml, group=DEFAULT_GROUP, cnt=1
+2020-09-23 18:08:16| INFO | com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086| com.alibaba.nacos.client.config.impl.ClientWorker| 522| get changedGroupKeys:[]
+2020-09-23 18:08:16| INFO | com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086| com.alibaba.nacos.client.config.impl.ClientWorker| 522| get changedGroupKeys:[]
+2020-09-23 18:08:46| INFO | com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086| com.alibaba.nacos.client.config.impl.ClientWorker| 522| get changedGroupKeys:[]
+2020-09-23 18:09:15| INFO | com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086| com.alibaba.nacos.client.config.impl.ClientWorker| 522| get changedGroupKeys:[]
+2020-09-23 18:09:45| INFO | com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086| com.alibaba.nacos.client.config.impl.ClientWorker| 522| get changedGroupKeys:[]
+2020-09-23 18:10:14| INFO | com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086| com.alibaba.nacos.client.config.impl.ClientWorker| 522| get changedGroupKeys:[]
+2020-09-23 18:10:44| INFO | com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086| com.alibaba.nacos.client.config.impl.ClientWorker| 522| get changedGroupKeys:[]
+2020-09-23 18:11:13| INFO | com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086| com.alibaba.nacos.client.config.impl.ClientWorker| 522| get changedGroupKeys:[]
+2020-09-23 18:11:43| INFO | com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086| com.alibaba.nacos.client.config.impl.ClientWorker| 522| get changedGroupKeys:[]
+2020-09-23 18:12:12| INFO | com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086| com.alibaba.nacos.client.config.impl.ClientWorker| 522| get changedGroupKeys:[]
+2020-09-23 18:12:42| INFO | com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086| com.alibaba.nacos.client.config.impl.ClientWorker| 522| get changedGroupKeys:[]
+2020-09-23 18:13:11| INFO | com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086| com.alibaba.nacos.client.config.impl.ClientWorker| 522| get changedGroupKeys:[]
+2020-09-23 18:13:41| INFO | com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086| com.alibaba.nacos.client.config.impl.ClientWorker| 522| get changedGroupKeys:[]
+2020-09-23 18:14:10| INFO | com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086| com.alibaba.nacos.client.config.impl.ClientWorker| 522| get changedGroupKeys:[]
+2020-09-23 18:14:40| INFO | com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086| com.alibaba.nacos.client.config.impl.ClientWorker| 522| get changedGroupKeys:[]
+2020-09-23 18:15:09| INFO | com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086| com.alibaba.nacos.client.config.impl.ClientWorker| 522| get changedGroupKeys:[]
+2020-09-23 18:15:39| INFO | com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086| com.alibaba.nacos.client.config.impl.ClientWorker| 522| get changedGroupKeys:[]
+2020-09-23 18:16:08| INFO | com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086| com.alibaba.nacos.client.config.impl.ClientWorker| 522| get changedGroupKeys:[]
+2020-09-23 18:16:38| INFO | com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086| com.alibaba.nacos.client.config.impl.ClientWorker| 522| get changedGroupKeys:[]
+2020-09-23 18:17:07| INFO | com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086| com.alibaba.nacos.client.config.impl.ClientWorker| 522| get changedGroupKeys:[]
+2020-09-23 18:17:37| INFO | com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086| com.alibaba.nacos.client.config.impl.ClientWorker| 522| get changedGroupKeys:[]
+2020-09-23 18:18:06| INFO | com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086| com.alibaba.nacos.client.config.impl.ClientWorker| 522| get changedGroupKeys:[]
+2020-09-23 18:18:36| INFO | com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086| com.alibaba.nacos.client.config.impl.ClientWorker| 522| get changedGroupKeys:[]
+2020-09-23 18:19:05| INFO | com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086| com.alibaba.nacos.client.config.impl.ClientWorker| 522| get changedGroupKeys:[]
+2020-09-23 18:19:35| INFO | com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086| com.alibaba.nacos.client.config.impl.ClientWorker| 522| get changedGroupKeys:[]
+2020-09-23 18:20:04| INFO | com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086| com.alibaba.nacos.client.config.impl.ClientWorker| 522| get changedGroupKeys:[]
+2020-09-23 18:20:34| INFO | com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086| com.alibaba.nacos.client.config.impl.ClientWorker| 522| get changedGroupKeys:[]
+2020-09-23 18:21:03| INFO | com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086| com.alibaba.nacos.client.config.impl.ClientWorker| 522| get changedGroupKeys:[]
+2020-09-23 18:21:33| INFO | com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086| com.alibaba.nacos.client.config.impl.ClientWorker| 522| get changedGroupKeys:[]
+2020-09-23 18:21:43| INFO | SpringContextShutdownHook| org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler| 218| Shutting down ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-09-23 18:21:43| INFO | SpringContextShutdownHook| com.alibaba.cloud.nacos.registry.NacosServiceRegistry| 80| De-registering from Nacos Server now...
+2020-09-23 18:21:43| INFO | SpringContextShutdownHook| com.alibaba.nacos.client.naming| 79| [BEAT] removing beat: DEFAULT_GROUP@@user-server:192.168.20.240:8085 from beat map.
+2020-09-23 18:21:43| INFO | SpringContextShutdownHook| com.alibaba.nacos.client.naming| 218| [DEREGISTER-SERVICE] 08e0b806-874c-4fb7-afe3-f16e7fdc2086 deregistering service DEFAULT_GROUP@@user-server with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceIdGenerator":"simple","ip":"192.168.20.240","ipDeleteTimeout":30000,"metadata":{},"port":8085,"weight":1.0}
+2020-09-23 18:21:43| INFO | SpringContextShutdownHook| com.alibaba.cloud.nacos.registry.NacosServiceRegistry| 100| De-registration finished.
+2020-09-23 18:21:43| INFO | SpringContextShutdownHook| org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor| 218| Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-23 18:21:43| INFO | SpringContextShutdownHook| org.redisson.Version| 41| Redisson 3.13.4
+2020-09-23 18:21:43| INFO | redisson-netty-5-2| org.redisson.connection.pool.MasterConnectionPool| 167| 10 connections initialized for /127.0.0.1:6379
+2020-09-23 18:21:43| INFO | redisson-netty-5-2| org.redisson.connection.pool.MasterPubSubConnectionPool| 167| 1 connections initialized for /127.0.0.1:6379
+2020-09-23 18:21:44| INFO | SpringContextShutdownHook| com.demo.alibaba.filter.MyUrlFilter| 124| MyUrlFilter 过滤器销毁了！！！
+2020-09-23 18:21:50 |INFO  |main |com.alibaba.nacos.client.config.impl.LocalConfigInfoProcessor |195 |LOCAL_SNAPSHOT_PATH:C:\Users\admin\nacos\config
+2020-09-23 18:21:50 |INFO  |main |com.alibaba.nacos.client.config.impl.Limiter |53 |limitTime:5.0
+2020-09-23 18:21:50 |WARN  |main |com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder |87 |Ignore the empty nacos configuration and get it based on dataId[user-server] & group[DEFAULT_GROUP]
+2020-09-23 18:21:50 |WARN  |main |com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder |87 |Ignore the empty nacos configuration and get it based on dataId[user-server.yaml] & group[DEFAULT_GROUP]
+2020-09-23 18:21:50 |INFO  |main |com.alibaba.nacos.client.config.utils.JVMUtil |47 |isMultiInstance:false
+2020-09-23 18:21:50 |INFO  |main |org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration |105 |Located property source: [BootstrapPropertySource {name='bootstrapProperties-user-server-dev.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-user-server.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-user-server,DEFAULT_GROUP'}]
+2020-09-23 18:21:51 |INFO  |main |org.springframework.cloud.context.scope.GenericScope |295 |BeanFactory id=cd585d14-488a-3f72-a117-9b6102a9fca8
+2020-09-23 18:21:51 |INFO  |main |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |330 |Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-23 18:21:52 |INFO  |main |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |330 |Bean 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration' of type [com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-23 18:21:52 |INFO  |main |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |92 |Tomcat initialized with port(s): 8085 (http)
+2020-09-23 18:21:52 |INFO  |main |org.apache.coyote.http11.Http11NioProtocol |173 |Initializing ProtocolHandler ["http-nio-8085"]
+2020-09-23 18:21:52 |INFO  |main |org.apache.catalina.core.StandardService |173 |Starting service [Tomcat]
+2020-09-23 18:21:52 |INFO  |main |org.apache.catalina.core.StandardEngine |173 |Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-09-23 18:21:52 |INFO  |main |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/user-server] |173 |Initializing Spring embedded WebApplicationContext
+2020-09-23 18:21:52 |INFO  |main |org.springframework.web.context.ContextLoader |284 |Root WebApplicationContext: initialization completed in 2051 ms
+2020-09-23 18:21:53 |INFO  |main |org.redisson.Version |41 |Redisson 3.13.4
+2020-09-23 18:21:53 |INFO  |redisson-netty-2-3 |org.redisson.connection.pool.MasterPubSubConnectionPool |167 |1 connections initialized for /127.0.0.1:6379
+2020-09-23 18:21:53 |INFO  |redisson-netty-2-2 |org.redisson.connection.pool.MasterConnectionPool |167 |10 connections initialized for /127.0.0.1:6379
+2020-09-23 18:21:54 |WARN  |main |com.netflix.config.sources.URLConfigurationSource |121 |No URLs will be polled as dynamic configuration sources.
+2020-09-23 18:21:54 |INFO  |main |com.netflix.config.sources.URLConfigurationSource |122 |To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-23 18:21:54 |WARN  |main |com.netflix.config.sources.URLConfigurationSource |121 |No URLs will be polled as dynamic configuration sources.
+2020-09-23 18:21:54 |INFO  |main |com.netflix.config.sources.URLConfigurationSource |122 |To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-23 18:21:54 |INFO  |main |org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor |181 |Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-23 18:21:54 |INFO  |main |com.alibaba.cloud.sentinel.SentinelWebAutoConfiguration |80 |[Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+2020-09-23 18:21:54 |INFO  |main |org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler |181 |Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-09-23 18:21:54 |INFO  |main |com.alibaba.nacos.client.naming |56 |initializer namespace from System Property :null
+2020-09-23 18:21:54 |INFO  |main |com.alibaba.nacos.client.naming |65 |initializer namespace from System Environment :null
+2020-09-23 18:21:54 |INFO  |main |com.alibaba.nacos.client.naming |75 |initializer namespace from System Property :null
+2020-09-23 18:21:55 |INFO  |main |org.apache.coyote.http11.Http11NioProtocol |173 |Starting ProtocolHandler ["http-nio-8085"]
+2020-09-23 18:21:55 |INFO  |main |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |204 |Tomcat started on port(s): 8085 (http) with context path '/user-server'
+2020-09-23 18:21:55 |INFO  |main |com.alibaba.nacos.client.naming |66 |[BEAT] adding beat: {"cluster":"DEFAULT","ip":"192.168.20.240","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":8085,"scheduled":false,"serviceName":"DEFAULT_GROUP@@user-server","stopped":false,"weight":1.0} to beat map.
+2020-09-23 18:21:55 |INFO  |main |com.alibaba.nacos.client.naming |196 |[REGISTER-SERVICE] 08e0b806-874c-4fb7-afe3-f16e7fdc2086 registering service DEFAULT_GROUP@@user-server with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"192.168.20.240","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":8085,"weight":1.0}
+2020-09-23 18:21:55 |INFO  |main |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |65 |nacos registry, DEFAULT_GROUP user-server 192.168.20.240:8085 register finished
+2020-09-23 18:21:56 |INFO  |main |com.alibaba.nacos.client.config.impl.ClientWorker |197 |[fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] [subscribe] user-server+DEFAULT_GROUP+08e0b806-874c-4fb7-afe3-f16e7fdc2086
+2020-09-23 18:21:56 |INFO  |main |com.alibaba.nacos.client.config.impl.CacheData |92 |[fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] [add-listener] ok, tenant=08e0b806-874c-4fb7-afe3-f16e7fdc2086, dataId=user-server, group=DEFAULT_GROUP, cnt=1
+2020-09-23 18:21:56 |INFO  |main |com.alibaba.nacos.client.config.impl.ClientWorker |197 |[fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] [subscribe] user-server.yaml+DEFAULT_GROUP+08e0b806-874c-4fb7-afe3-f16e7fdc2086
+2020-09-23 18:21:56 |INFO  |main |com.alibaba.nacos.client.config.impl.CacheData |92 |[fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] [add-listener] ok, tenant=08e0b806-874c-4fb7-afe3-f16e7fdc2086, dataId=user-server.yaml, group=DEFAULT_GROUP, cnt=1
+2020-09-23 18:21:56 |INFO  |main |com.alibaba.nacos.client.config.impl.ClientWorker |197 |[fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] [subscribe] user-server-dev.yaml+DEFAULT_GROUP+08e0b806-874c-4fb7-afe3-f16e7fdc2086
+2020-09-23 18:21:56 |INFO  |main |com.alibaba.nacos.client.config.impl.CacheData |92 |[fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] [add-listener] ok, tenant=08e0b806-874c-4fb7-afe3-f16e7fdc2086, dataId=user-server-dev.yaml, group=DEFAULT_GROUP, cnt=1
+2020-09-23 18:21:56 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-09-23 18:22:25 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-09-23 18:22:55 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-09-23 18:23:24 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-09-23 18:23:54 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-09-23 18:24:23 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]

@@ -7,15 +7,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="consumer" />
-        <module name="base-entity" />
+        <module name="gateway" />
         <module name="payment-service" />
         <module name="common" />
         <module name="provider" />
-        <module name="gateway" />
+        <module name="base-entity" />
+        <module name="user-server" />
         <module name="sentinel-server" />
         <module name="alibaba-nacos-provider-server" />
-        <module name="user-server" />
+        <module name="consumer" />
         <module name="alibaba-nacos-consumer-server" />
       </profile>
     </annotationProcessing>
