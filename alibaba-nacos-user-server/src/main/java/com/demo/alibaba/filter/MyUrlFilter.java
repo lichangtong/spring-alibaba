@@ -71,7 +71,7 @@ public class MyUrlFilter implements Filter {
             BufferedReader reader = new BufferedReader(new InputStreamReader(request.getInputStream()));
             String body = IOUtils.read(reader);
 
-            Map<String, Object> map = JSON.toJavaObject(JSON.parseObject(body), Map.class);
+            Map map = JSON.toJavaObject(JSON.parseObject(body), Map.class);
             System.out.println("返回json数据");
             System.out.println(body);
             System.out.println("结束");
@@ -103,14 +103,11 @@ public class MyUrlFilter implements Filter {
         if (CollectionUtils.isNotEmpty(ignoredFilterPath) && ignoredFilterPath.contains(requestUrl)) {
             log.info("放开请求限制，不做权限校验：{}", requestUrl);
             filterChain.doFilter(servletRequest, servletResponse);
-            return;
         } else if (multipartResolver.isMultipart(request)) {
             log.info("是否为文件上传request");
             filterChain.doFilter(servletRequest, servletResponse);
-            return;
         } else if (HttpMethod.GET.name().equals(method)) {
             returnResult(servletResponse, "不支持的请求方式：" + method + ",服务只支持：" + HttpMethod.POST.name() + "方式", 400);
-            return;
         } else {
             MyHttpServletRequestWrapper myHttp = new MyHttpServletRequestWrapper(request);
             //验签
