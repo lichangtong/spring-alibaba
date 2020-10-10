@@ -1,50 +1,28 @@
 package com.demo.alibaba.filter;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.cloud.gateway.filter.GatewayFilterChain;
 import org.springframework.cloud.gateway.filter.GlobalFilter;
 import org.springframework.core.Ordered;
+import org.springframework.core.io.buffer.DataBuffer;
+import org.springframework.http.MediaType;
+import org.springframework.http.server.reactive.ServerHttpResponse;
 import org.springframework.stereotype.Component;
+import org.springframework.util.CollectionUtils;
 import org.springframework.web.server.ServerWebExchange;
+import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 @Component
 @Slf4j
 public class FluidControlGlobalGatewayFilter implements GlobalFilter, Ordered {
-    /*    *//**
-     * 去掉空格,换行和制表符
-     *
-     * @param str
-     * @return
-     *//*
-    private static String formatStr(String str) {
-        if (str != null && str.length() > 0) {
-            Pattern p = Pattern.compile("\\s*|\t|\r|\n");
-            Matcher m = p.matcher(str);
-            return m.replaceAll("");
-        }
-        return str;
-    }*/
-
-//    /**
-//     * 读取body内容
-//     *
-//     * @param serverHttpRequest
-//     * @return
-//     */
-//    public static String resolveBodyFromRequest(ServerHttpRequest serverHttpRequest) {
-//        //获取请求体
-//        StringBuilder sb = new StringBuilder();
-//        serverHttpRequest.getBody().subscribe(buffer -> {
-//            byte[] bytes = new byte[buffer.readableByteCount()];
-//            buffer.read(bytes);
-//            DataBufferUtils.release(buffer);
-//            String bodyString = new String(bytes, StandardCharsets.UTF_8);
-//            sb.append(bodyString);
-//        });
-//        return formatStr(sb.toString());
-//    }
-
     /**
      * @return
      * @throws
@@ -57,38 +35,29 @@ public class FluidControlGlobalGatewayFilter implements GlobalFilter, Ordered {
     @Override
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
 
+        List<String> tokens = exchange.getRequest().getHeaders().get("Token");
+        if (!CollectionUtils.isEmpty(tokens) && tokens.size() > 0) {
+            String token = tokens.get(0);
+            log.info("token:{}", token);
+            if (StringUtils.isNoneEmpty(token)) {
 
-//        ServerHttpResponse httpResponse = exchange.getResponse();
-//        ServerHttpRequest httpRequest = exchange.getRequest();
-//        ApiResult apiResult = new ApiResult();
-//        apiResult.setCode(400);
-//        apiResult.setMessage("错误");
-//        byte[] bits = JSON.toJSONString(apiResult).getBytes();
-//
-//        httpResponse.setStatusCode(HttpStatus.BAD_REQUEST);
-//        DataBuffer buffer = httpResponse.bufferFactory().wrap(bits);
-//
-//        return httpResponse.writeWith(Mono.just(buffer));
+            } else {
+                Map<String, Object> bodyMap = new HashMap<>();
+                bodyMap.put("key", "李四");
+                byte[] bytes = null;
+                try {
+                    bytes = new ObjectMapper().writeValueAsBytes(bodyMap);
+                } catch (JsonProcessingException e) {
+                    e.printStackTrace();
+                }
+                ServerHttpResponse response = exchange.getResponse();
+                response.getHeaders().add("Content-Type", MediaType.APPLICATION_JSON_VALUE);
+                DataBuffer buffer = response.bufferFactory().wrap(bytes);
+                return response.writeWith(Flux.just(buffer));
+            }
+        }
         return chain.filter(exchange);
-        //        请求信息
 
-       /* ServerHttpRequest request = exchange.getRequest();
-        InetSocketAddress inetSocketAddress = request.getRemoteAddress();
-        String hostAddress = inetSocketAddress.getAddress().getHostAddress();
-        String hostName = inetSocketAddress.getHostName();
-        log.info("请求地址IP,{}, hostName:{}", hostAddress, hostName);
-        String methodValue = request.getMethodValue();
-        log.info("method:{}", methodValue);
-
-
-        String body = resolveBodyFromRequest(exchange.getRequest());
-        System.out.println(body);
-        log.info("body:{}",body);
-        MultiValueMap<String, String> multiValueMap = request.getQueryParams();
-        System.out.println(JSON.toJSONString(multiValueMap));
-        //        返回信息
-        ServerHttpResponse response = exchange.getResponse();
-        return chain.filter(exchange);*/
     }
 
     @Override

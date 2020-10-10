@@ -289,3 +289,49 @@
 2020-09-23 18:23:24 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
 2020-09-23 18:23:54 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
 2020-09-23 18:24:23 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-09-23 18:24:53 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-09-23 18:25:22 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-09-23 18:25:40 |INFO  |SpringContextShutdownHook |org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler |218 |Shutting down ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-09-23 18:25:40 |INFO  |SpringContextShutdownHook |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |80 |De-registering from Nacos Server now...
+2020-09-23 18:25:40 |INFO  |SpringContextShutdownHook |com.alibaba.nacos.client.naming |79 |[BEAT] removing beat: DEFAULT_GROUP@@user-server:192.168.20.240:8085 from beat map.
+2020-09-23 18:25:40 |INFO  |SpringContextShutdownHook |com.alibaba.nacos.client.naming |218 |[DEREGISTER-SERVICE] 08e0b806-874c-4fb7-afe3-f16e7fdc2086 deregistering service DEFAULT_GROUP@@user-server with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceIdGenerator":"simple","ip":"192.168.20.240","ipDeleteTimeout":30000,"metadata":{},"port":8085,"weight":1.0}
+2020-09-23 18:25:40 |INFO  |SpringContextShutdownHook |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |100 |De-registration finished.
+2020-09-23 18:25:40 |INFO  |SpringContextShutdownHook |org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor |218 |Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-23 18:25:40 |ERROR |redisson-netty-2-2 |org.redisson.client.handler.ErrorsLoggingHandler |47 |Exception occured. Channel: [id: 0x5ce48eff, L:/127.0.0.1:58175 - R:/127.0.0.1:6379]
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1133)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2020-09-23 18:25:40 |ERROR |redisson-netty-2-4 |org.redisson.client.handler.ErrorsLoggingHandler |47 |Exception occured. Channel: [id: 0x78a672f2, L:/127.0.0.1:58168 - R:/127.0.0.1:6379]
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1133)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
