@@ -1,0 +1,1 @@
+1,UserPayTypeEnum 枚举方式，利用策略和工厂模式做支付
