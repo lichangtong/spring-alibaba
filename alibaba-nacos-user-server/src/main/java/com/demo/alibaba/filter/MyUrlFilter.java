@@ -8,9 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.redisson.api.RedissonClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.http.HttpMethod;
-import org.springframework.stereotype.Component;
 import org.springframework.web.multipart.commons.CommonsMultipartResolver;
 
 import javax.servlet.*;
@@ -28,9 +26,9 @@ import java.util.*;
  * @Author: lichangtong
  * @Date: 2020-09-21 14:14
  */
-@Component
+//@Component
 @Slf4j
-@RefreshScope
+//@RefreshScope
 public class MyUrlFilter implements Filter {
 
     @Value("#{'${ignored.filter.path:}'.empty ? null : '${ignored.filter.path:}'.split(',')}")

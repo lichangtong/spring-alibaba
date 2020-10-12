@@ -1,9 +1,14 @@
 package com.demo.alibaba.controller;
 
+import com.demo.alibaba.enums.UserPayTypeEnum;
+import com.demo.alibaba.interfaces.ValidGroup;
 import com.demo.alibaba.request.UserType;
 import com.demo.alibaba.result.ApiResult;
 import com.demo.alibaba.service.IUserPayService;
 import com.demo.alibaba.service.UserPayServiceStrategyFactory;
+import org.springframework.validation.BindingResult;
+import org.springframework.validation.ObjectError;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -34,8 +39,18 @@ public class UserPayController {
      */
 
     @PostMapping("/v1/create")
-    public ApiResult createOrder(@RequestBody UserType userType) {
-        IUserPayService userPayService = UserPayServiceStrategyFactory.getUserPayService(userType.getUserType());
+    public ApiResult createOrder(@RequestBody @Validated(value = ValidGroup.class) UserType userType, BindingResult bindingResult) {
+        if (bindingResult.hasErrors()) {
+            for (ObjectError error : bindingResult.getAllErrors()) {
+                System.out.println(error.getObjectName());
+                System.out.println(error.getDefaultMessage());
+            }
+        }
+        UserPayTypeEnum userPayTypeEnum = UserPayTypeEnum.getUserPayType(userType.getUserType());
+        if (userPayTypeEnum == null) {
+            return new ApiResult();
+        }
+        IUserPayService userPayService = UserPayServiceStrategyFactory.getUserPayService(userPayTypeEnum.getUserPayTypeame());
         userPayService.unifiedOrder();
         userPayService.queryOrderStatus();
         userPayService.queryPayType();

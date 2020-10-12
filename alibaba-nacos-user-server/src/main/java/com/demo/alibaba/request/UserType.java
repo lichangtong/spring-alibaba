@@ -1,7 +1,9 @@
 package com.demo.alibaba.request;
 
+import com.demo.alibaba.interfaces.ValidGroup;
 import lombok.Data;
 
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 
 /**
@@ -13,5 +15,6 @@ import java.io.Serializable;
  */
 @Data
 public class UserType implements Serializable {
-    private String userType;
+    @NotNull(groups = ValidGroup.class, message = "userType 不能为空")
+    private Integer userType;
 }
