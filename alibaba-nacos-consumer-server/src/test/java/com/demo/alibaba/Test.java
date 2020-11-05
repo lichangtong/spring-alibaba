@@ -13,14 +13,16 @@ import java.util.*;
 
 public class Test {
     public static void main(String[] args) {
-        System.out.println("2020-10-22 00:33:33".substring(0, 10));
+//        System.out.println("2020-10-22 00:33:33".substring(0, 10));
 //        int i = 0;
 //        System.out.println(++i);
 //        System.out.println(i);
 /*        System.out.println(DateUtil.parse("20201022").toDateStr());
         System.out.println(DateUtil.parse("20200831 2:42","yyyyMMdd HH:mm").toString());
         System.out.println(DateUtil.offsetMinute(new Date(),-15));*/
-        testSign();
+//        testSign();
+
+
     }
 
     public static void testSign() {
