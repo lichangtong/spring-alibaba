@@ -25,6 +25,7 @@
         <!--        <nacos.version>0.9.0.RELEASE</nacos.version>-->
         <redisson.version>3.13.4</redisson.version>
         <commons-lang.version>3.11</commons-lang.version>
+        <hutool.version>5.3.7</hutool.version>
     </properties>
 
     <modules>
@@ -92,6 +93,29 @@
                 <artifactId>spring-boot-starter-logging</artifactId>
                 <version>${spring-log.version}</version>
             </dependency>
+            <!-- huTool 工具包 -->
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-core</artifactId>
+                <version>${hutool.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-crypto</artifactId>
+                <version>${hutool.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-http</artifactId>
+                <version>${hutool.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-json</artifactId>
+                <version>${hutool.version}</version>
+            </dependency>
+            <!-- huTool 工具包 End -->
+
         </dependencies>
 
     </dependencyManagement>
