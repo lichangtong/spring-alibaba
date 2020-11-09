@@ -1343,3 +1343,739 @@ java.lang.NullPointerException: null
 2020-10-12 11:15:37 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
 2020-10-12 11:16:07 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
 2020-10-12 11:16:36 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 17:18:55 |INFO  |main |com.alibaba.nacos.client.config.impl.LocalConfigInfoProcessor |195 |LOCAL_SNAPSHOT_PATH:C:\Users\admin\nacos\config
+2020-11-09 17:18:55 |INFO  |main |com.alibaba.nacos.client.config.impl.Limiter |53 |limitTime:5.0
+2020-11-09 17:18:55 |WARN  |main |com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder |87 |Ignore the empty nacos configuration and get it based on dataId[user-server] & group[DEFAULT_GROUP]
+2020-11-09 17:18:55 |WARN  |main |com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder |87 |Ignore the empty nacos configuration and get it based on dataId[user-server.yaml] & group[DEFAULT_GROUP]
+2020-11-09 17:18:55 |INFO  |main |com.alibaba.nacos.client.config.utils.JVMUtil |47 |isMultiInstance:false
+2020-11-09 17:18:56 |INFO  |main |org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration |105 |Located property source: [BootstrapPropertySource {name='bootstrapProperties-user-server-dev.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-user-server.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-user-server,DEFAULT_GROUP'}]
+2020-11-09 17:18:57 |INFO  |main |org.springframework.cloud.context.scope.GenericScope |295 |BeanFactory id=80d6d2dc-0c4c-3ce3-8714-c88df2d2f942
+2020-11-09 17:18:57 |INFO  |main |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |330 |Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-09 17:18:57 |WARN  |main |org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext |558 |Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration': Unsatisfied dependency expressed through field 'properties'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: warning no match for this type name: com.demo.alibaba.controller [Xlint:invalidAbsoluteTypeName]
+2020-11-09 17:18:57 |INFO  |main |org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener |136 |
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-11-09 17:18:57 |ERROR |main |org.springframework.boot.SpringApplication |826 |Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration': Unsatisfied dependency expressed through field 'properties'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: warning no match for this type name: com.demo.alibaba.controller [Xlint:invalidAbsoluteTypeName]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1422)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:409)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:240)
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:722)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:535)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.demo.alibaba.AlibabaNacosUserServerApplication.main(AlibabaNacosUserServerApplication.java:16)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: warning no match for this type name: com.demo.alibaba.controller [Xlint:invalidAbsoluteTypeName]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1287)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1207)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	... 28 common frames omitted
+Caused by: java.lang.IllegalArgumentException: warning no match for this type name: com.demo.alibaba.controller [Xlint:invalidAbsoluteTypeName]
+	at org.aspectj.weaver.tools.PointcutParser.parsePointcutExpression(PointcutParser.java:319)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.buildPointcutExpression(AspectJExpressionPointcut.java:227)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.obtainPointcutExpression(AspectJExpressionPointcut.java:198)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.getClassFilter(AspectJExpressionPointcut.java:177)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:226)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:289)
+	at org.springframework.aop.support.AopUtils.findAdvisorsThatCanApply(AopUtils.java:321)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findAdvisorsThatCanApply(AbstractAdvisorAutoProxyCreator.java:126)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findEligibleAdvisors(AbstractAdvisorAutoProxyCreator.java:95)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.getAdvicesAndAdvisorsForBean(AbstractAdvisorAutoProxyCreator.java:76)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.wrapIfNecessary(AbstractAutoProxyCreator.java:347)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessAfterInitialization(AbstractAutoProxyCreator.java:299)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	... 37 common frames omitted
+2020-11-09 17:21:12 |INFO  |main |com.alibaba.nacos.client.config.impl.LocalConfigInfoProcessor |195 |LOCAL_SNAPSHOT_PATH:C:\Users\admin\nacos\config
+2020-11-09 17:21:12 |INFO  |main |com.alibaba.nacos.client.config.impl.Limiter |53 |limitTime:5.0
+2020-11-09 17:21:12 |WARN  |main |com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder |87 |Ignore the empty nacos configuration and get it based on dataId[user-server] & group[DEFAULT_GROUP]
+2020-11-09 17:21:12 |WARN  |main |com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder |87 |Ignore the empty nacos configuration and get it based on dataId[user-server.yaml] & group[DEFAULT_GROUP]
+2020-11-09 17:21:12 |INFO  |main |com.alibaba.nacos.client.config.utils.JVMUtil |47 |isMultiInstance:false
+2020-11-09 17:21:12 |INFO  |main |org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration |105 |Located property source: [BootstrapPropertySource {name='bootstrapProperties-user-server-dev.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-user-server.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-user-server,DEFAULT_GROUP'}]
+2020-11-09 17:21:13 |INFO  |main |org.springframework.cloud.context.scope.GenericScope |295 |BeanFactory id=80d6d2dc-0c4c-3ce3-8714-c88df2d2f942
+2020-11-09 17:21:14 |INFO  |main |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |330 |Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-09 17:21:15 |INFO  |main |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |330 |Bean 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration' of type [com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-09 17:21:15 |INFO  |main |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |92 |Tomcat initialized with port(s): 8085 (http)
+2020-11-09 17:21:15 |INFO  |main |org.apache.coyote.http11.Http11NioProtocol |173 |Initializing ProtocolHandler ["http-nio-8085"]
+2020-11-09 17:21:15 |INFO  |main |org.apache.catalina.core.StandardService |173 |Starting service [Tomcat]
+2020-11-09 17:21:15 |INFO  |main |org.apache.catalina.core.StandardEngine |173 |Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-11-09 17:21:16 |INFO  |main |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/user-server] |173 |Initializing Spring embedded WebApplicationContext
+2020-11-09 17:21:16 |INFO  |main |org.springframework.web.context.ContextLoader |284 |Root WebApplicationContext: initialization completed in 3691 ms
+2020-11-09 17:21:16 |INFO  |main |org.redisson.Version |41 |Redisson 3.13.4
+2020-11-09 17:21:19 |INFO  |redisson-netty-2-1 |org.redisson.connection.pool.MasterPubSubConnectionPool |167 |1 connections initialized for /127.0.0.1:6379
+2020-11-09 17:21:19 |INFO  |redisson-netty-2-3 |org.redisson.connection.pool.MasterConnectionPool |167 |10 connections initialized for /127.0.0.1:6379
+2020-11-09 17:21:19 |WARN  |main |com.netflix.config.sources.URLConfigurationSource |121 |No URLs will be polled as dynamic configuration sources.
+2020-11-09 17:21:19 |INFO  |main |com.netflix.config.sources.URLConfigurationSource |122 |To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-09 17:21:19 |WARN  |main |com.netflix.config.sources.URLConfigurationSource |121 |No URLs will be polled as dynamic configuration sources.
+2020-11-09 17:21:19 |INFO  |main |com.netflix.config.sources.URLConfigurationSource |122 |To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-09 17:21:19 |INFO  |main |org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor |181 |Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-09 17:21:19 |INFO  |main |com.alibaba.cloud.sentinel.SentinelWebAutoConfiguration |80 |[Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+2020-11-09 17:21:21 |INFO  |main |org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler |181 |Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-11-09 17:21:21 |INFO  |main |com.alibaba.nacos.client.naming |56 |initializer namespace from System Property :null
+2020-11-09 17:21:21 |INFO  |main |com.alibaba.nacos.client.naming |65 |initializer namespace from System Environment :null
+2020-11-09 17:21:21 |INFO  |main |com.alibaba.nacos.client.naming |75 |initializer namespace from System Property :null
+2020-11-09 17:21:23 |INFO  |main |org.apache.coyote.http11.Http11NioProtocol |173 |Starting ProtocolHandler ["http-nio-8085"]
+2020-11-09 17:21:23 |INFO  |main |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |204 |Tomcat started on port(s): 8085 (http) with context path '/user-server'
+2020-11-09 17:21:23 |INFO  |main |com.alibaba.nacos.client.naming |66 |[BEAT] adding beat: {"cluster":"DEFAULT","ip":"192.168.5.1","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":8085,"scheduled":false,"serviceName":"DEFAULT_GROUP@@user-server","stopped":false,"weight":1.0} to beat map.
+2020-11-09 17:21:23 |INFO  |main |com.alibaba.nacos.client.naming |196 |[REGISTER-SERVICE] 08e0b806-874c-4fb7-afe3-f16e7fdc2086 registering service DEFAULT_GROUP@@user-server with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"192.168.5.1","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":8085,"weight":1.0}
+2020-11-09 17:21:23 |INFO  |main |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |65 |nacos registry, DEFAULT_GROUP user-server 192.168.5.1:8085 register finished
+2020-11-09 17:21:24 |INFO  |main |com.alibaba.nacos.client.config.impl.ClientWorker |197 |[fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] [subscribe] user-server+DEFAULT_GROUP+08e0b806-874c-4fb7-afe3-f16e7fdc2086
+2020-11-09 17:21:24 |INFO  |main |com.alibaba.nacos.client.config.impl.CacheData |92 |[fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] [add-listener] ok, tenant=08e0b806-874c-4fb7-afe3-f16e7fdc2086, dataId=user-server, group=DEFAULT_GROUP, cnt=1
+2020-11-09 17:21:24 |INFO  |main |com.alibaba.nacos.client.config.impl.ClientWorker |197 |[fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] [subscribe] user-server.yaml+DEFAULT_GROUP+08e0b806-874c-4fb7-afe3-f16e7fdc2086
+2020-11-09 17:21:24 |INFO  |main |com.alibaba.nacos.client.config.impl.CacheData |92 |[fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] [add-listener] ok, tenant=08e0b806-874c-4fb7-afe3-f16e7fdc2086, dataId=user-server.yaml, group=DEFAULT_GROUP, cnt=1
+2020-11-09 17:21:24 |INFO  |main |com.alibaba.nacos.client.config.impl.ClientWorker |197 |[fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] [subscribe] user-server-dev.yaml+DEFAULT_GROUP+08e0b806-874c-4fb7-afe3-f16e7fdc2086
+2020-11-09 17:21:24 |INFO  |main |com.alibaba.nacos.client.config.impl.CacheData |92 |[fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] [add-listener] ok, tenant=08e0b806-874c-4fb7-afe3-f16e7fdc2086, dataId=user-server-dev.yaml, group=DEFAULT_GROUP, cnt=1
+2020-11-09 17:21:24 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 17:21:54 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 17:22:23 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 17:22:53 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 17:23:05 |INFO  |http-nio-8085-exec-2 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/user-server] |173 |Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-09 17:23:05 |INFO  |http-nio-8085-exec-2 |org.springframework.web.servlet.DispatcherServlet |525 |Initializing Servlet 'dispatcherServlet'
+2020-11-09 17:23:05 |INFO  |http-nio-8085-exec-2 |org.springframework.web.servlet.DispatcherServlet |547 |Completed initialization in 18 ms
+2020-11-09 17:23:22 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 17:23:52 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 17:24:21 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 17:24:25 |WARN  |http-nio-8085-exec-3 |org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver |199 |Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.demo.alibaba.result.ApiResult com.demo.alibaba.controller.PayController.toPay(com.demo.alibaba.request.PayRequest) with 4 errors: [Field error in object 'payRequest' on field 'orderNo': rejected value [null]; codes [NotNull.payRequest.orderNo,NotNull.orderNo,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [payRequest.orderNo,orderNo]; arguments []; default message [orderNo]]; default message [订单号不能为空]] [Field error in object 'payRequest' on field 'clientTradeNo': rejected value [null]; codes [NotNull.payRequest.clientTradeNo,NotNull.clientTradeNo,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [payRequest.clientTradeNo,clientTradeNo]; arguments []; default message [clientTradeNo]]; default message [客户端交易号不能为空]] [Field error in object 'payRequest' on field 'storeId': rejected value [null]; codes [NotNull.payRequest.storeId,NotNull.storeId,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [payRequest.storeId,storeId]; arguments []; default message [storeId]]; default message [门店Id不能为空]] [Field error in object 'payRequest' on field 'payAmount': rejected value [0]; codes [Min.payRequest.payAmount,Min.payAmount,Min.java.math.BigDecimal,Min]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [payRequest.payAmount,payAmount]; arguments []; default message [payAmount],1]; default message [支付金额不能少于1分]] ]
+2020-11-09 17:24:50 |WARN  |http-nio-8085-exec-4 |org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver |199 |Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.demo.alibaba.result.ApiResult com.demo.alibaba.controller.PayController.toPay(com.demo.alibaba.request.PayRequest) with 4 errors: [Field error in object 'payRequest' on field 'orderNo': rejected value [null]; codes [NotNull.payRequest.orderNo,NotNull.orderNo,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [payRequest.orderNo,orderNo]; arguments []; default message [orderNo]]; default message [订单号不能为空]] [Field error in object 'payRequest' on field 'clientTradeNo': rejected value [null]; codes [NotNull.payRequest.clientTradeNo,NotNull.clientTradeNo,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [payRequest.clientTradeNo,clientTradeNo]; arguments []; default message [clientTradeNo]]; default message [客户端交易号不能为空]] [Field error in object 'payRequest' on field 'payAmount': rejected value [0]; codes [Min.payRequest.payAmount,Min.payAmount,Min.java.math.BigDecimal,Min]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [payRequest.payAmount,payAmount]; arguments []; default message [payAmount],1]; default message [支付金额不能少于1分]] [Field error in object 'payRequest' on field 'storeId': rejected value [null]; codes [NotNull.payRequest.storeId,NotNull.storeId,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [payRequest.storeId,storeId]; arguments []; default message [storeId]]; default message [门店Id不能为空]] ]
+2020-11-09 17:24:51 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 17:25:00 |WARN  |http-nio-8085-exec-5 |org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver |199 |Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.demo.alibaba.result.ApiResult com.demo.alibaba.controller.PayController.toPay(com.demo.alibaba.request.PayRequest) with 4 errors: [Field error in object 'payRequest' on field 'orderNo': rejected value [null]; codes [NotNull.payRequest.orderNo,NotNull.orderNo,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [payRequest.orderNo,orderNo]; arguments []; default message [orderNo]]; default message [订单号不能为空]] [Field error in object 'payRequest' on field 'clientTradeNo': rejected value [null]; codes [NotNull.payRequest.clientTradeNo,NotNull.clientTradeNo,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [payRequest.clientTradeNo,clientTradeNo]; arguments []; default message [clientTradeNo]]; default message [客户端交易号不能为空]] [Field error in object 'payRequest' on field 'payAmount': rejected value [0]; codes [Min.payRequest.payAmount,Min.payAmount,Min.java.math.BigDecimal,Min]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [payRequest.payAmount,payAmount]; arguments []; default message [payAmount],1]; default message [支付金额不能少于1分]] [Field error in object 'payRequest' on field 'storeId': rejected value [null]; codes [NotNull.payRequest.storeId,NotNull.storeId,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [payRequest.storeId,storeId]; arguments []; default message [storeId]]; default message [门店Id不能为空]] ]
+2020-11-09 17:25:10 |INFO  |SpringContextShutdownHook |org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler |218 |Shutting down ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-11-09 17:25:10 |INFO  |SpringContextShutdownHook |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |80 |De-registering from Nacos Server now...
+2020-11-09 17:25:10 |INFO  |SpringContextShutdownHook |com.alibaba.nacos.client.naming |79 |[BEAT] removing beat: DEFAULT_GROUP@@user-server:192.168.5.1:8085 from beat map.
+2020-11-09 17:25:10 |INFO  |SpringContextShutdownHook |com.alibaba.nacos.client.naming |218 |[DEREGISTER-SERVICE] 08e0b806-874c-4fb7-afe3-f16e7fdc2086 deregistering service DEFAULT_GROUP@@user-server with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceIdGenerator":"simple","ip":"192.168.5.1","ipDeleteTimeout":30000,"metadata":{},"port":8085,"weight":1.0}
+2020-11-09 17:25:10 |INFO  |SpringContextShutdownHook |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |100 |De-registration finished.
+2020-11-09 17:25:10 |INFO  |SpringContextShutdownHook |org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor |218 |Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-09 17:25:31 |INFO  |main |com.alibaba.nacos.client.config.impl.LocalConfigInfoProcessor |195 |LOCAL_SNAPSHOT_PATH:C:\Users\admin\nacos\config
+2020-11-09 17:25:31 |INFO  |main |com.alibaba.nacos.client.config.impl.Limiter |53 |limitTime:5.0
+2020-11-09 17:25:31 |WARN  |main |com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder |87 |Ignore the empty nacos configuration and get it based on dataId[user-server] & group[DEFAULT_GROUP]
+2020-11-09 17:25:31 |WARN  |main |com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder |87 |Ignore the empty nacos configuration and get it based on dataId[user-server.yaml] & group[DEFAULT_GROUP]
+2020-11-09 17:25:31 |INFO  |main |com.alibaba.nacos.client.config.utils.JVMUtil |47 |isMultiInstance:false
+2020-11-09 17:25:31 |INFO  |main |org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration |105 |Located property source: [BootstrapPropertySource {name='bootstrapProperties-user-server-dev.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-user-server.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-user-server,DEFAULT_GROUP'}]
+2020-11-09 17:25:33 |INFO  |main |org.springframework.cloud.context.scope.GenericScope |295 |BeanFactory id=80d6d2dc-0c4c-3ce3-8714-c88df2d2f942
+2020-11-09 17:25:33 |INFO  |main |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |330 |Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-09 17:25:33 |WARN  |main |org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext |558 |Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration': Unsatisfied dependency expressed through field 'properties'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: warning no match for this type name: com.demo.alibaba.controller [Xlint:invalidAbsoluteTypeName]
+2020-11-09 17:25:33 |INFO  |main |org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener |136 |
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-11-09 17:25:33 |ERROR |main |org.springframework.boot.SpringApplication |826 |Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration': Unsatisfied dependency expressed through field 'properties'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: warning no match for this type name: com.demo.alibaba.controller [Xlint:invalidAbsoluteTypeName]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1422)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:409)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:240)
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:722)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:535)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.demo.alibaba.AlibabaNacosUserServerApplication.main(AlibabaNacosUserServerApplication.java:16)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: warning no match for this type name: com.demo.alibaba.controller [Xlint:invalidAbsoluteTypeName]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1287)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1207)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	... 28 common frames omitted
+Caused by: java.lang.IllegalArgumentException: warning no match for this type name: com.demo.alibaba.controller [Xlint:invalidAbsoluteTypeName]
+	at org.aspectj.weaver.tools.PointcutParser.parsePointcutExpression(PointcutParser.java:319)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.buildPointcutExpression(AspectJExpressionPointcut.java:227)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.obtainPointcutExpression(AspectJExpressionPointcut.java:198)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.getClassFilter(AspectJExpressionPointcut.java:177)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:226)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:289)
+	at org.springframework.aop.support.AopUtils.findAdvisorsThatCanApply(AopUtils.java:321)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findAdvisorsThatCanApply(AbstractAdvisorAutoProxyCreator.java:126)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findEligibleAdvisors(AbstractAdvisorAutoProxyCreator.java:95)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.getAdvicesAndAdvisorsForBean(AbstractAdvisorAutoProxyCreator.java:76)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.wrapIfNecessary(AbstractAutoProxyCreator.java:347)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessAfterInitialization(AbstractAutoProxyCreator.java:299)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	... 37 common frames omitted
+2020-11-09 17:26:33 |INFO  |main |com.alibaba.nacos.client.config.impl.LocalConfigInfoProcessor |195 |LOCAL_SNAPSHOT_PATH:C:\Users\admin\nacos\config
+2020-11-09 17:26:33 |INFO  |main |com.alibaba.nacos.client.config.impl.Limiter |53 |limitTime:5.0
+2020-11-09 17:26:33 |WARN  |main |com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder |87 |Ignore the empty nacos configuration and get it based on dataId[user-server] & group[DEFAULT_GROUP]
+2020-11-09 17:26:33 |WARN  |main |com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder |87 |Ignore the empty nacos configuration and get it based on dataId[user-server.yaml] & group[DEFAULT_GROUP]
+2020-11-09 17:26:34 |INFO  |main |com.alibaba.nacos.client.config.utils.JVMUtil |47 |isMultiInstance:false
+2020-11-09 17:26:34 |INFO  |main |org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration |105 |Located property source: [BootstrapPropertySource {name='bootstrapProperties-user-server-dev.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-user-server.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-user-server,DEFAULT_GROUP'}]
+2020-11-09 17:26:35 |INFO  |main |org.springframework.cloud.context.scope.GenericScope |295 |BeanFactory id=80d6d2dc-0c4c-3ce3-8714-c88df2d2f942
+2020-11-09 17:26:35 |INFO  |main |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |330 |Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-09 17:26:36 |INFO  |main |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |330 |Bean 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration' of type [com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-09 17:26:36 |INFO  |main |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |92 |Tomcat initialized with port(s): 8085 (http)
+2020-11-09 17:26:36 |INFO  |main |org.apache.coyote.http11.Http11NioProtocol |173 |Initializing ProtocolHandler ["http-nio-8085"]
+2020-11-09 17:26:36 |INFO  |main |org.apache.catalina.core.StandardService |173 |Starting service [Tomcat]
+2020-11-09 17:26:36 |INFO  |main |org.apache.catalina.core.StandardEngine |173 |Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-11-09 17:26:36 |INFO  |main |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/user-server] |173 |Initializing Spring embedded WebApplicationContext
+2020-11-09 17:26:36 |INFO  |main |org.springframework.web.context.ContextLoader |284 |Root WebApplicationContext: initialization completed in 2913 ms
+2020-11-09 17:26:37 |INFO  |main |org.redisson.Version |41 |Redisson 3.13.4
+2020-11-09 17:26:39 |INFO  |redisson-netty-2-3 |org.redisson.connection.pool.MasterPubSubConnectionPool |167 |1 connections initialized for /127.0.0.1:6379
+2020-11-09 17:26:39 |INFO  |redisson-netty-2-1 |org.redisson.connection.pool.MasterConnectionPool |167 |10 connections initialized for /127.0.0.1:6379
+2020-11-09 17:26:39 |WARN  |main |com.netflix.config.sources.URLConfigurationSource |121 |No URLs will be polled as dynamic configuration sources.
+2020-11-09 17:26:39 |INFO  |main |com.netflix.config.sources.URLConfigurationSource |122 |To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-09 17:26:39 |WARN  |main |com.netflix.config.sources.URLConfigurationSource |121 |No URLs will be polled as dynamic configuration sources.
+2020-11-09 17:26:39 |INFO  |main |com.netflix.config.sources.URLConfigurationSource |122 |To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-09 17:26:40 |INFO  |main |org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor |181 |Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-09 17:26:40 |INFO  |main |com.alibaba.cloud.sentinel.SentinelWebAutoConfiguration |80 |[Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+2020-11-09 17:26:41 |INFO  |main |org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler |181 |Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-11-09 17:26:41 |INFO  |main |com.alibaba.nacos.client.naming |56 |initializer namespace from System Property :null
+2020-11-09 17:26:41 |INFO  |main |com.alibaba.nacos.client.naming |65 |initializer namespace from System Environment :null
+2020-11-09 17:26:41 |INFO  |main |com.alibaba.nacos.client.naming |75 |initializer namespace from System Property :null
+2020-11-09 17:26:43 |INFO  |main |org.apache.coyote.http11.Http11NioProtocol |173 |Starting ProtocolHandler ["http-nio-8085"]
+2020-11-09 17:26:43 |INFO  |main |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |204 |Tomcat started on port(s): 8085 (http) with context path '/user-server'
+2020-11-09 17:26:43 |INFO  |main |com.alibaba.nacos.client.naming |66 |[BEAT] adding beat: {"cluster":"DEFAULT","ip":"192.168.5.1","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":8085,"scheduled":false,"serviceName":"DEFAULT_GROUP@@user-server","stopped":false,"weight":1.0} to beat map.
+2020-11-09 17:26:43 |INFO  |main |com.alibaba.nacos.client.naming |196 |[REGISTER-SERVICE] 08e0b806-874c-4fb7-afe3-f16e7fdc2086 registering service DEFAULT_GROUP@@user-server with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"192.168.5.1","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":8085,"weight":1.0}
+2020-11-09 17:26:43 |INFO  |main |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |65 |nacos registry, DEFAULT_GROUP user-server 192.168.5.1:8085 register finished
+2020-11-09 17:26:44 |INFO  |main |com.alibaba.nacos.client.config.impl.ClientWorker |197 |[fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] [subscribe] user-server+DEFAULT_GROUP+08e0b806-874c-4fb7-afe3-f16e7fdc2086
+2020-11-09 17:26:44 |INFO  |main |com.alibaba.nacos.client.config.impl.CacheData |92 |[fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] [add-listener] ok, tenant=08e0b806-874c-4fb7-afe3-f16e7fdc2086, dataId=user-server, group=DEFAULT_GROUP, cnt=1
+2020-11-09 17:26:44 |INFO  |main |com.alibaba.nacos.client.config.impl.ClientWorker |197 |[fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] [subscribe] user-server.yaml+DEFAULT_GROUP+08e0b806-874c-4fb7-afe3-f16e7fdc2086
+2020-11-09 17:26:44 |INFO  |main |com.alibaba.nacos.client.config.impl.CacheData |92 |[fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] [add-listener] ok, tenant=08e0b806-874c-4fb7-afe3-f16e7fdc2086, dataId=user-server.yaml, group=DEFAULT_GROUP, cnt=1
+2020-11-09 17:26:44 |INFO  |main |com.alibaba.nacos.client.config.impl.ClientWorker |197 |[fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] [subscribe] user-server-dev.yaml+DEFAULT_GROUP+08e0b806-874c-4fb7-afe3-f16e7fdc2086
+2020-11-09 17:26:44 |INFO  |main |com.alibaba.nacos.client.config.impl.CacheData |92 |[fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] [add-listener] ok, tenant=08e0b806-874c-4fb7-afe3-f16e7fdc2086, dataId=user-server-dev.yaml, group=DEFAULT_GROUP, cnt=1
+2020-11-09 17:26:44 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 17:27:00 |INFO  |http-nio-8085-exec-1 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/user-server] |173 |Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-09 17:27:00 |INFO  |http-nio-8085-exec-1 |org.springframework.web.servlet.DispatcherServlet |525 |Initializing Servlet 'dispatcherServlet'
+2020-11-09 17:27:00 |INFO  |http-nio-8085-exec-1 |org.springframework.web.servlet.DispatcherServlet |547 |Completed initialization in 18 ms
+2020-11-09 17:27:01 |WARN  |http-nio-8085-exec-1 |org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver |199 |Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.demo.alibaba.result.ApiResult com.demo.alibaba.controller.PayController.toPay(com.demo.alibaba.request.PayRequest) with 4 errors: [Field error in object 'payRequest' on field 'storeId': rejected value [null]; codes [NotNull.payRequest.storeId,NotNull.storeId,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [payRequest.storeId,storeId]; arguments []; default message [storeId]]; default message [门店Id不能为空]] [Field error in object 'payRequest' on field 'payAmount': rejected value [0]; codes [Min.payRequest.payAmount,Min.payAmount,Min.java.math.BigDecimal,Min]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [payRequest.payAmount,payAmount]; arguments []; default message [payAmount],1]; default message [支付金额不能少于1分]] [Field error in object 'payRequest' on field 'orderNo': rejected value [null]; codes [NotNull.payRequest.orderNo,NotNull.orderNo,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [payRequest.orderNo,orderNo]; arguments []; default message [orderNo]]; default message [订单号不能为空]] [Field error in object 'payRequest' on field 'clientTradeNo': rejected value [null]; codes [NotNull.payRequest.clientTradeNo,NotNull.clientTradeNo,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [payRequest.clientTradeNo,clientTradeNo]; arguments []; default message [clientTradeNo]]; default message [客户端交易号不能为空]] ]
+2020-11-09 17:27:14 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 17:27:44 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 17:27:45 |WARN  |http-nio-8085-exec-2 |org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver |199 |Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.demo.alibaba.result.ApiResult com.demo.alibaba.controller.PayController.toPay(com.demo.alibaba.request.PayRequest) with 3 errors: [Field error in object 'payRequest' on field 'payAmount': rejected value [0]; codes [Min.payRequest.payAmount,Min.payAmount,Min.java.math.BigDecimal,Min]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [payRequest.payAmount,payAmount]; arguments []; default message [payAmount],1]; default message [支付金额不能少于1分]] [Field error in object 'payRequest' on field 'clientTradeNo': rejected value [null]; codes [NotNull.payRequest.clientTradeNo,NotNull.clientTradeNo,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [payRequest.clientTradeNo,clientTradeNo]; arguments []; default message [clientTradeNo]]; default message [客户端交易号不能为空]] [Field error in object 'payRequest' on field 'orderNo': rejected value [null]; codes [NotNull.payRequest.orderNo,NotNull.orderNo,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [payRequest.orderNo,orderNo]; arguments []; default message [orderNo]]; default message [订单号不能为空]] ]
+2020-11-09 17:27:59 |WARN  |http-nio-8085-exec-3 |org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver |199 |Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.demo.alibaba.result.ApiResult com.demo.alibaba.controller.PayController.toPay(com.demo.alibaba.request.PayRequest) with 2 errors: [Field error in object 'payRequest' on field 'orderNo': rejected value [null]; codes [NotNull.payRequest.orderNo,NotNull.orderNo,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [payRequest.orderNo,orderNo]; arguments []; default message [orderNo]]; default message [订单号不能为空]] [Field error in object 'payRequest' on field 'clientTradeNo': rejected value [null]; codes [NotNull.payRequest.clientTradeNo,NotNull.clientTradeNo,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [payRequest.clientTradeNo,clientTradeNo]; arguments []; default message [clientTradeNo]]; default message [客户端交易号不能为空]] ]
+2020-11-09 17:28:12 |WARN  |http-nio-8085-exec-5 |org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver |199 |Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.demo.alibaba.result.ApiResult com.demo.alibaba.controller.PayController.toPay(com.demo.alibaba.request.PayRequest): [Field error in object 'payRequest' on field 'clientTradeNo': rejected value [null]; codes [NotNull.payRequest.clientTradeNo,NotNull.clientTradeNo,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [payRequest.clientTradeNo,clientTradeNo]; arguments []; default message [clientTradeNo]]; default message [客户端交易号不能为空]] ]
+2020-11-09 17:28:13 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 17:28:43 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 17:29:12 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 17:29:42 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 17:30:11 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 17:30:41 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 17:31:10 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 17:31:40 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 17:32:09 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 17:32:39 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 17:33:08 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 17:33:38 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 17:34:07 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 17:34:37 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 17:35:06 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 17:35:36 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 17:36:05 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 17:36:35 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 17:37:04 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 17:37:34 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 17:37:38 |INFO  |SpringContextShutdownHook |org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler |218 |Shutting down ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-11-09 17:37:38 |INFO  |SpringContextShutdownHook |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |80 |De-registering from Nacos Server now...
+2020-11-09 17:37:38 |INFO  |SpringContextShutdownHook |com.alibaba.nacos.client.naming |79 |[BEAT] removing beat: DEFAULT_GROUP@@user-server:192.168.5.1:8085 from beat map.
+2020-11-09 17:37:38 |INFO  |SpringContextShutdownHook |com.alibaba.nacos.client.naming |218 |[DEREGISTER-SERVICE] 08e0b806-874c-4fb7-afe3-f16e7fdc2086 deregistering service DEFAULT_GROUP@@user-server with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceIdGenerator":"simple","ip":"192.168.5.1","ipDeleteTimeout":30000,"metadata":{},"port":8085,"weight":1.0}
+2020-11-09 17:37:38 |INFO  |SpringContextShutdownHook |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |100 |De-registration finished.
+2020-11-09 17:37:39 |INFO  |SpringContextShutdownHook |org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor |218 |Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-09 17:37:52 |INFO  |main |com.alibaba.nacos.client.config.impl.LocalConfigInfoProcessor |195 |LOCAL_SNAPSHOT_PATH:C:\Users\admin\nacos\config
+2020-11-09 17:37:52 |INFO  |main |com.alibaba.nacos.client.config.impl.Limiter |53 |limitTime:5.0
+2020-11-09 17:37:52 |WARN  |main |com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder |87 |Ignore the empty nacos configuration and get it based on dataId[user-server] & group[DEFAULT_GROUP]
+2020-11-09 17:37:52 |WARN  |main |com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder |87 |Ignore the empty nacos configuration and get it based on dataId[user-server.yaml] & group[DEFAULT_GROUP]
+2020-11-09 17:37:52 |INFO  |main |com.alibaba.nacos.client.config.utils.JVMUtil |47 |isMultiInstance:false
+2020-11-09 17:37:52 |INFO  |main |org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration |105 |Located property source: [BootstrapPropertySource {name='bootstrapProperties-user-server-dev.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-user-server.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-user-server,DEFAULT_GROUP'}]
+2020-11-09 17:37:54 |INFO  |main |org.springframework.cloud.context.scope.GenericScope |295 |BeanFactory id=80d6d2dc-0c4c-3ce3-8714-c88df2d2f942
+2020-11-09 17:37:54 |WARN  |main |org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext |558 |Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sentinelBeanPostProcessor' defined in class path resource [com/alibaba/cloud/sentinel/custom/SentinelAutoConfiguration.class]: BeanPostProcessor before instantiation of bean failed; nested exception is java.lang.IllegalArgumentException: ProceedingJoinPoint is only supported for around advice
+2020-11-09 17:37:54 |INFO  |main |org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener |136 |
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-11-09 17:37:54 |ERROR |main |org.springframework.boot.SpringApplication |826 |Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sentinelBeanPostProcessor' defined in class path resource [com/alibaba/cloud/sentinel/custom/SentinelAutoConfiguration.class]: BeanPostProcessor before instantiation of bean failed; nested exception is java.lang.IllegalArgumentException: ProceedingJoinPoint is only supported for around advice
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:512)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:240)
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:722)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:535)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.demo.alibaba.AlibabaNacosUserServerApplication.main(AlibabaNacosUserServerApplication.java:16)
+Caused by: java.lang.IllegalArgumentException: ProceedingJoinPoint is only supported for around advice
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.maybeBindProceedingJoinPoint(AbstractAspectJAdvice.java:414)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.calculateArgumentBindings(AbstractAspectJAdvice.java:388)
+	at org.springframework.aop.aspectj.annotation.ReflectiveAspectJAdvisorFactory.getAdvice(ReflectiveAspectJAdvisorFactory.java:294)
+	at org.springframework.aop.aspectj.annotation.InstantiationModelAwarePointcutAdvisorImpl.instantiateAdvice(InstantiationModelAwarePointcutAdvisorImpl.java:149)
+	at org.springframework.aop.aspectj.annotation.InstantiationModelAwarePointcutAdvisorImpl.<init>(InstantiationModelAwarePointcutAdvisorImpl.java:113)
+	at org.springframework.aop.aspectj.annotation.ReflectiveAspectJAdvisorFactory.getAdvisor(ReflectiveAspectJAdvisorFactory.java:198)
+	at org.springframework.aop.aspectj.annotation.ReflectiveAspectJAdvisorFactory.getAdvisors(ReflectiveAspectJAdvisorFactory.java:126)
+	at org.springframework.aop.aspectj.annotation.BeanFactoryAspectJAdvisorsBuilder.buildAspectJAdvisors(BeanFactoryAspectJAdvisorsBuilder.java:110)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:95)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:101)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:251)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1141)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1114)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:506)
+	... 14 common frames omitted
+2020-11-09 17:38:47 |INFO  |main |com.alibaba.nacos.client.config.impl.LocalConfigInfoProcessor |195 |LOCAL_SNAPSHOT_PATH:C:\Users\admin\nacos\config
+2020-11-09 17:38:47 |INFO  |main |com.alibaba.nacos.client.config.impl.Limiter |53 |limitTime:5.0
+2020-11-09 17:38:47 |WARN  |main |com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder |87 |Ignore the empty nacos configuration and get it based on dataId[user-server] & group[DEFAULT_GROUP]
+2020-11-09 17:38:47 |WARN  |main |com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder |87 |Ignore the empty nacos configuration and get it based on dataId[user-server.yaml] & group[DEFAULT_GROUP]
+2020-11-09 17:38:47 |INFO  |main |com.alibaba.nacos.client.config.utils.JVMUtil |47 |isMultiInstance:false
+2020-11-09 17:38:47 |INFO  |main |org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration |105 |Located property source: [BootstrapPropertySource {name='bootstrapProperties-user-server-dev.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-user-server.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-user-server,DEFAULT_GROUP'}]
+2020-11-09 17:38:49 |INFO  |main |org.springframework.cloud.context.scope.GenericScope |295 |BeanFactory id=80d6d2dc-0c4c-3ce3-8714-c88df2d2f942
+2020-11-09 17:38:49 |WARN  |main |org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext |558 |Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sentinelBeanPostProcessor' defined in class path resource [com/alibaba/cloud/sentinel/custom/SentinelAutoConfiguration.class]: BeanPostProcessor before instantiation of bean failed; nested exception is java.lang.IllegalArgumentException: ProceedingJoinPoint is only supported for around advice
+2020-11-09 17:38:49 |INFO  |main |org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener |136 |
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-11-09 17:38:49 |ERROR |main |org.springframework.boot.SpringApplication |826 |Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sentinelBeanPostProcessor' defined in class path resource [com/alibaba/cloud/sentinel/custom/SentinelAutoConfiguration.class]: BeanPostProcessor before instantiation of bean failed; nested exception is java.lang.IllegalArgumentException: ProceedingJoinPoint is only supported for around advice
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:512)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:240)
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:722)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:535)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.demo.alibaba.AlibabaNacosUserServerApplication.main(AlibabaNacosUserServerApplication.java:16)
+Caused by: java.lang.IllegalArgumentException: ProceedingJoinPoint is only supported for around advice
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.maybeBindProceedingJoinPoint(AbstractAspectJAdvice.java:414)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.calculateArgumentBindings(AbstractAspectJAdvice.java:388)
+	at org.springframework.aop.aspectj.annotation.ReflectiveAspectJAdvisorFactory.getAdvice(ReflectiveAspectJAdvisorFactory.java:294)
+	at org.springframework.aop.aspectj.annotation.InstantiationModelAwarePointcutAdvisorImpl.instantiateAdvice(InstantiationModelAwarePointcutAdvisorImpl.java:149)
+	at org.springframework.aop.aspectj.annotation.InstantiationModelAwarePointcutAdvisorImpl.<init>(InstantiationModelAwarePointcutAdvisorImpl.java:113)
+	at org.springframework.aop.aspectj.annotation.ReflectiveAspectJAdvisorFactory.getAdvisor(ReflectiveAspectJAdvisorFactory.java:198)
+	at org.springframework.aop.aspectj.annotation.ReflectiveAspectJAdvisorFactory.getAdvisors(ReflectiveAspectJAdvisorFactory.java:126)
+	at org.springframework.aop.aspectj.annotation.BeanFactoryAspectJAdvisorsBuilder.buildAspectJAdvisors(BeanFactoryAspectJAdvisorsBuilder.java:110)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:95)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:101)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:251)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1141)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1114)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:506)
+	... 14 common frames omitted
+2020-11-09 17:39:48 |INFO  |main |com.alibaba.nacos.client.config.impl.LocalConfigInfoProcessor |195 |LOCAL_SNAPSHOT_PATH:C:\Users\admin\nacos\config
+2020-11-09 17:39:48 |INFO  |main |com.alibaba.nacos.client.config.impl.Limiter |53 |limitTime:5.0
+2020-11-09 17:39:48 |WARN  |main |com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder |87 |Ignore the empty nacos configuration and get it based on dataId[user-server] & group[DEFAULT_GROUP]
+2020-11-09 17:39:48 |WARN  |main |com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder |87 |Ignore the empty nacos configuration and get it based on dataId[user-server.yaml] & group[DEFAULT_GROUP]
+2020-11-09 17:39:49 |INFO  |main |com.alibaba.nacos.client.config.utils.JVMUtil |47 |isMultiInstance:false
+2020-11-09 17:39:49 |INFO  |main |org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration |105 |Located property source: [BootstrapPropertySource {name='bootstrapProperties-user-server-dev.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-user-server.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-user-server,DEFAULT_GROUP'}]
+2020-11-09 17:39:50 |INFO  |main |org.springframework.cloud.context.scope.GenericScope |295 |BeanFactory id=80d6d2dc-0c4c-3ce3-8714-c88df2d2f942
+2020-11-09 17:39:50 |INFO  |main |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |330 |Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-09 17:39:51 |INFO  |main |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |330 |Bean 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration' of type [com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-09 17:39:51 |INFO  |main |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |92 |Tomcat initialized with port(s): 8085 (http)
+2020-11-09 17:39:51 |INFO  |main |org.apache.coyote.http11.Http11NioProtocol |173 |Initializing ProtocolHandler ["http-nio-8085"]
+2020-11-09 17:39:51 |INFO  |main |org.apache.catalina.core.StandardService |173 |Starting service [Tomcat]
+2020-11-09 17:39:51 |INFO  |main |org.apache.catalina.core.StandardEngine |173 |Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-11-09 17:39:52 |INFO  |main |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/user-server] |173 |Initializing Spring embedded WebApplicationContext
+2020-11-09 17:39:52 |INFO  |main |org.springframework.web.context.ContextLoader |284 |Root WebApplicationContext: initialization completed in 3064 ms
+2020-11-09 17:39:52 |INFO  |main |org.redisson.Version |41 |Redisson 3.13.4
+2020-11-09 17:39:55 |INFO  |redisson-netty-2-3 |org.redisson.connection.pool.MasterPubSubConnectionPool |167 |1 connections initialized for /127.0.0.1:6379
+2020-11-09 17:39:55 |INFO  |redisson-netty-2-4 |org.redisson.connection.pool.MasterConnectionPool |167 |10 connections initialized for /127.0.0.1:6379
+2020-11-09 17:39:55 |WARN  |main |com.netflix.config.sources.URLConfigurationSource |121 |No URLs will be polled as dynamic configuration sources.
+2020-11-09 17:39:55 |INFO  |main |com.netflix.config.sources.URLConfigurationSource |122 |To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-09 17:39:55 |WARN  |main |com.netflix.config.sources.URLConfigurationSource |121 |No URLs will be polled as dynamic configuration sources.
+2020-11-09 17:39:55 |INFO  |main |com.netflix.config.sources.URLConfigurationSource |122 |To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-09 17:39:55 |INFO  |main |org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor |181 |Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-09 17:39:55 |INFO  |main |com.alibaba.cloud.sentinel.SentinelWebAutoConfiguration |80 |[Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+2020-11-09 17:39:57 |INFO  |main |org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler |181 |Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-11-09 17:39:57 |INFO  |main |com.alibaba.nacos.client.naming |56 |initializer namespace from System Property :null
+2020-11-09 17:39:57 |INFO  |main |com.alibaba.nacos.client.naming |65 |initializer namespace from System Environment :null
+2020-11-09 17:39:57 |INFO  |main |com.alibaba.nacos.client.naming |75 |initializer namespace from System Property :null
+2020-11-09 17:39:59 |INFO  |main |org.apache.coyote.http11.Http11NioProtocol |173 |Starting ProtocolHandler ["http-nio-8085"]
+2020-11-09 17:39:59 |INFO  |main |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |204 |Tomcat started on port(s): 8085 (http) with context path '/user-server'
+2020-11-09 17:39:59 |INFO  |main |com.alibaba.nacos.client.naming |66 |[BEAT] adding beat: {"cluster":"DEFAULT","ip":"192.168.5.1","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":8085,"scheduled":false,"serviceName":"DEFAULT_GROUP@@user-server","stopped":false,"weight":1.0} to beat map.
+2020-11-09 17:39:59 |INFO  |main |com.alibaba.nacos.client.naming |196 |[REGISTER-SERVICE] 08e0b806-874c-4fb7-afe3-f16e7fdc2086 registering service DEFAULT_GROUP@@user-server with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"192.168.5.1","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":8085,"weight":1.0}
+2020-11-09 17:39:59 |INFO  |main |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |65 |nacos registry, DEFAULT_GROUP user-server 192.168.5.1:8085 register finished
+2020-11-09 17:40:00 |INFO  |main |com.alibaba.nacos.client.config.impl.ClientWorker |197 |[fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] [subscribe] user-server+DEFAULT_GROUP+08e0b806-874c-4fb7-afe3-f16e7fdc2086
+2020-11-09 17:40:00 |INFO  |main |com.alibaba.nacos.client.config.impl.CacheData |92 |[fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] [add-listener] ok, tenant=08e0b806-874c-4fb7-afe3-f16e7fdc2086, dataId=user-server, group=DEFAULT_GROUP, cnt=1
+2020-11-09 17:40:00 |INFO  |main |com.alibaba.nacos.client.config.impl.ClientWorker |197 |[fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] [subscribe] user-server.yaml+DEFAULT_GROUP+08e0b806-874c-4fb7-afe3-f16e7fdc2086
+2020-11-09 17:40:00 |INFO  |main |com.alibaba.nacos.client.config.impl.CacheData |92 |[fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] [add-listener] ok, tenant=08e0b806-874c-4fb7-afe3-f16e7fdc2086, dataId=user-server.yaml, group=DEFAULT_GROUP, cnt=1
+2020-11-09 17:40:00 |INFO  |main |com.alibaba.nacos.client.config.impl.ClientWorker |197 |[fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] [subscribe] user-server-dev.yaml+DEFAULT_GROUP+08e0b806-874c-4fb7-afe3-f16e7fdc2086
+2020-11-09 17:40:00 |INFO  |main |com.alibaba.nacos.client.config.impl.CacheData |92 |[fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] [add-listener] ok, tenant=08e0b806-874c-4fb7-afe3-f16e7fdc2086, dataId=user-server-dev.yaml, group=DEFAULT_GROUP, cnt=1
+2020-11-09 17:40:00 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 17:40:00 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 17:40:11 |INFO  |http-nio-8085-exec-1 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/user-server] |173 |Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-09 17:40:11 |INFO  |http-nio-8085-exec-1 |org.springframework.web.servlet.DispatcherServlet |525 |Initializing Servlet 'dispatcherServlet'
+2020-11-09 17:40:11 |INFO  |http-nio-8085-exec-1 |org.springframework.web.servlet.DispatcherServlet |547 |Completed initialization in 18 ms
+2020-11-09 17:40:33 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 17:41:03 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 17:41:41 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 17:41:41 |INFO  |SpringContextShutdownHook |org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler |218 |Shutting down ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-11-09 17:41:41 |INFO  |SpringContextShutdownHook |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |80 |De-registering from Nacos Server now...
+2020-11-09 17:41:41 |INFO  |SpringContextShutdownHook |com.alibaba.nacos.client.naming |79 |[BEAT] removing beat: DEFAULT_GROUP@@user-server:192.168.5.1:8085 from beat map.
+2020-11-09 17:41:41 |INFO  |SpringContextShutdownHook |com.alibaba.nacos.client.naming |218 |[DEREGISTER-SERVICE] 08e0b806-874c-4fb7-afe3-f16e7fdc2086 deregistering service DEFAULT_GROUP@@user-server with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceIdGenerator":"simple","ip":"192.168.5.1","ipDeleteTimeout":30000,"metadata":{},"port":8085,"weight":1.0}
+2020-11-09 17:41:41 |INFO  |SpringContextShutdownHook |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |100 |De-registration finished.
+2020-11-09 17:41:41 |INFO  |SpringContextShutdownHook |org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor |218 |Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-09 17:43:02 |INFO  |main |com.alibaba.nacos.client.config.impl.LocalConfigInfoProcessor |195 |LOCAL_SNAPSHOT_PATH:C:\Users\admin\nacos\config
+2020-11-09 17:43:02 |INFO  |main |com.alibaba.nacos.client.config.impl.Limiter |53 |limitTime:5.0
+2020-11-09 17:43:03 |WARN  |main |com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder |87 |Ignore the empty nacos configuration and get it based on dataId[user-server] & group[DEFAULT_GROUP]
+2020-11-09 17:43:03 |WARN  |main |com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder |87 |Ignore the empty nacos configuration and get it based on dataId[user-server.yaml] & group[DEFAULT_GROUP]
+2020-11-09 17:43:03 |INFO  |main |com.alibaba.nacos.client.config.utils.JVMUtil |47 |isMultiInstance:false
+2020-11-09 17:43:03 |INFO  |main |org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration |105 |Located property source: [BootstrapPropertySource {name='bootstrapProperties-user-server-dev.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-user-server.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-user-server,DEFAULT_GROUP'}]
+2020-11-09 17:43:04 |INFO  |main |org.springframework.cloud.context.scope.GenericScope |295 |BeanFactory id=80d6d2dc-0c4c-3ce3-8714-c88df2d2f942
+2020-11-09 17:43:04 |INFO  |main |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |330 |Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-09 17:43:05 |INFO  |main |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |330 |Bean 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration' of type [com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-09 17:43:05 |INFO  |main |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |92 |Tomcat initialized with port(s): 8085 (http)
+2020-11-09 17:43:05 |INFO  |main |org.apache.coyote.http11.Http11NioProtocol |173 |Initializing ProtocolHandler ["http-nio-8085"]
+2020-11-09 17:43:05 |INFO  |main |org.apache.catalina.core.StandardService |173 |Starting service [Tomcat]
+2020-11-09 17:43:05 |INFO  |main |org.apache.catalina.core.StandardEngine |173 |Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-11-09 17:43:06 |INFO  |main |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/user-server] |173 |Initializing Spring embedded WebApplicationContext
+2020-11-09 17:43:06 |INFO  |main |org.springframework.web.context.ContextLoader |284 |Root WebApplicationContext: initialization completed in 3072 ms
+2020-11-09 17:43:06 |INFO  |main |org.redisson.Version |41 |Redisson 3.13.4
+2020-11-09 17:43:09 |INFO  |redisson-netty-2-4 |org.redisson.connection.pool.MasterConnectionPool |167 |10 connections initialized for /127.0.0.1:6379
+2020-11-09 17:43:09 |INFO  |redisson-netty-2-3 |org.redisson.connection.pool.MasterPubSubConnectionPool |167 |1 connections initialized for /127.0.0.1:6379
+2020-11-09 17:43:09 |WARN  |main |com.netflix.config.sources.URLConfigurationSource |121 |No URLs will be polled as dynamic configuration sources.
+2020-11-09 17:43:09 |INFO  |main |com.netflix.config.sources.URLConfigurationSource |122 |To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-09 17:43:09 |WARN  |main |com.netflix.config.sources.URLConfigurationSource |121 |No URLs will be polled as dynamic configuration sources.
+2020-11-09 17:43:09 |INFO  |main |com.netflix.config.sources.URLConfigurationSource |122 |To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-09 17:43:10 |INFO  |main |org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor |181 |Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-09 17:43:10 |INFO  |main |com.alibaba.cloud.sentinel.SentinelWebAutoConfiguration |80 |[Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+2020-11-09 17:43:11 |INFO  |main |org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler |181 |Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-11-09 17:43:11 |INFO  |main |com.alibaba.nacos.client.naming |56 |initializer namespace from System Property :null
+2020-11-09 17:43:11 |INFO  |main |com.alibaba.nacos.client.naming |65 |initializer namespace from System Environment :null
+2020-11-09 17:43:11 |INFO  |main |com.alibaba.nacos.client.naming |75 |initializer namespace from System Property :null
+2020-11-09 17:43:13 |INFO  |main |org.apache.coyote.http11.Http11NioProtocol |173 |Starting ProtocolHandler ["http-nio-8085"]
+2020-11-09 17:43:13 |INFO  |main |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |204 |Tomcat started on port(s): 8085 (http) with context path '/user-server'
+2020-11-09 17:43:14 |INFO  |main |com.alibaba.nacos.client.naming |66 |[BEAT] adding beat: {"cluster":"DEFAULT","ip":"192.168.5.1","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":8085,"scheduled":false,"serviceName":"DEFAULT_GROUP@@user-server","stopped":false,"weight":1.0} to beat map.
+2020-11-09 17:43:14 |INFO  |main |com.alibaba.nacos.client.naming |196 |[REGISTER-SERVICE] 08e0b806-874c-4fb7-afe3-f16e7fdc2086 registering service DEFAULT_GROUP@@user-server with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"192.168.5.1","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":8085,"weight":1.0}
+2020-11-09 17:43:14 |INFO  |main |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |65 |nacos registry, DEFAULT_GROUP user-server 192.168.5.1:8085 register finished
+2020-11-09 17:43:15 |INFO  |main |com.alibaba.nacos.client.config.impl.ClientWorker |197 |[fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] [subscribe] user-server+DEFAULT_GROUP+08e0b806-874c-4fb7-afe3-f16e7fdc2086
+2020-11-09 17:43:15 |INFO  |main |com.alibaba.nacos.client.config.impl.CacheData |92 |[fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] [add-listener] ok, tenant=08e0b806-874c-4fb7-afe3-f16e7fdc2086, dataId=user-server, group=DEFAULT_GROUP, cnt=1
+2020-11-09 17:43:15 |INFO  |main |com.alibaba.nacos.client.config.impl.ClientWorker |197 |[fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] [subscribe] user-server.yaml+DEFAULT_GROUP+08e0b806-874c-4fb7-afe3-f16e7fdc2086
+2020-11-09 17:43:15 |INFO  |main |com.alibaba.nacos.client.config.impl.CacheData |92 |[fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] [add-listener] ok, tenant=08e0b806-874c-4fb7-afe3-f16e7fdc2086, dataId=user-server.yaml, group=DEFAULT_GROUP, cnt=1
+2020-11-09 17:43:15 |INFO  |main |com.alibaba.nacos.client.config.impl.ClientWorker |197 |[fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] [subscribe] user-server-dev.yaml+DEFAULT_GROUP+08e0b806-874c-4fb7-afe3-f16e7fdc2086
+2020-11-09 17:43:15 |INFO  |main |com.alibaba.nacos.client.config.impl.CacheData |92 |[fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] [add-listener] ok, tenant=08e0b806-874c-4fb7-afe3-f16e7fdc2086, dataId=user-server-dev.yaml, group=DEFAULT_GROUP, cnt=1
+2020-11-09 17:43:15 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 17:43:27 |INFO  |http-nio-8085-exec-2 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/user-server] |173 |Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-09 17:43:27 |INFO  |http-nio-8085-exec-2 |org.springframework.web.servlet.DispatcherServlet |525 |Initializing Servlet 'dispatcherServlet'
+2020-11-09 17:43:27 |INFO  |http-nio-8085-exec-2 |org.springframework.web.servlet.DispatcherServlet |547 |Completed initialization in 19 ms
+2020-11-09 17:44:14 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 17:44:14 |INFO  |com.alibaba.nacos.naming.beat.sender |com.alibaba.nacos.client.naming |196 |[REGISTER-SERVICE] 08e0b806-874c-4fb7-afe3-f16e7fdc2086 registering service DEFAULT_GROUP@@user-server with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"192.168.5.1","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":8085,"serviceName":"DEFAULT_GROUP@@user-server","weight":1.0}
+2020-11-09 17:44:15 |INFO  |SpringContextShutdownHook |org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler |218 |Shutting down ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-11-09 17:44:15 |INFO  |SpringContextShutdownHook |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |80 |De-registering from Nacos Server now...
+2020-11-09 17:44:15 |INFO  |SpringContextShutdownHook |com.alibaba.nacos.client.naming |79 |[BEAT] removing beat: DEFAULT_GROUP@@user-server:192.168.5.1:8085 from beat map.
+2020-11-09 17:44:15 |INFO  |SpringContextShutdownHook |com.alibaba.nacos.client.naming |218 |[DEREGISTER-SERVICE] 08e0b806-874c-4fb7-afe3-f16e7fdc2086 deregistering service DEFAULT_GROUP@@user-server with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceIdGenerator":"simple","ip":"192.168.5.1","ipDeleteTimeout":30000,"metadata":{},"port":8085,"weight":1.0}
+2020-11-09 17:44:15 |INFO  |SpringContextShutdownHook |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |100 |De-registration finished.
+2020-11-09 17:44:15 |INFO  |SpringContextShutdownHook |org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor |218 |Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-09 17:44:29 |INFO  |main |com.alibaba.nacos.client.config.impl.LocalConfigInfoProcessor |195 |LOCAL_SNAPSHOT_PATH:C:\Users\admin\nacos\config
+2020-11-09 17:44:29 |INFO  |main |com.alibaba.nacos.client.config.impl.Limiter |53 |limitTime:5.0
+2020-11-09 17:44:29 |WARN  |main |com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder |87 |Ignore the empty nacos configuration and get it based on dataId[user-server] & group[DEFAULT_GROUP]
+2020-11-09 17:44:29 |WARN  |main |com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder |87 |Ignore the empty nacos configuration and get it based on dataId[user-server.yaml] & group[DEFAULT_GROUP]
+2020-11-09 17:44:29 |INFO  |main |com.alibaba.nacos.client.config.utils.JVMUtil |47 |isMultiInstance:false
+2020-11-09 17:44:29 |INFO  |main |org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration |105 |Located property source: [BootstrapPropertySource {name='bootstrapProperties-user-server-dev.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-user-server.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-user-server,DEFAULT_GROUP'}]
+2020-11-09 17:44:30 |INFO  |main |org.springframework.cloud.context.scope.GenericScope |295 |BeanFactory id=80d6d2dc-0c4c-3ce3-8714-c88df2d2f942
+2020-11-09 17:44:31 |INFO  |main |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |330 |Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-09 17:44:31 |INFO  |main |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |330 |Bean 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration' of type [com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-09 17:44:32 |INFO  |main |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |92 |Tomcat initialized with port(s): 8085 (http)
+2020-11-09 17:44:32 |INFO  |main |org.apache.coyote.http11.Http11NioProtocol |173 |Initializing ProtocolHandler ["http-nio-8085"]
+2020-11-09 17:44:32 |INFO  |main |org.apache.catalina.core.StandardService |173 |Starting service [Tomcat]
+2020-11-09 17:44:32 |INFO  |main |org.apache.catalina.core.StandardEngine |173 |Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-11-09 17:44:32 |INFO  |main |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/user-server] |173 |Initializing Spring embedded WebApplicationContext
+2020-11-09 17:44:32 |INFO  |main |org.springframework.web.context.ContextLoader |284 |Root WebApplicationContext: initialization completed in 3086 ms
+2020-11-09 17:44:32 |INFO  |main |org.redisson.Version |41 |Redisson 3.13.4
+2020-11-09 17:44:35 |INFO  |redisson-netty-2-4 |org.redisson.connection.pool.MasterPubSubConnectionPool |167 |1 connections initialized for /127.0.0.1:6379
+2020-11-09 17:44:35 |INFO  |redisson-netty-2-3 |org.redisson.connection.pool.MasterConnectionPool |167 |10 connections initialized for /127.0.0.1:6379
+2020-11-09 17:44:36 |WARN  |main |com.netflix.config.sources.URLConfigurationSource |121 |No URLs will be polled as dynamic configuration sources.
+2020-11-09 17:44:36 |INFO  |main |com.netflix.config.sources.URLConfigurationSource |122 |To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-09 17:44:36 |WARN  |main |com.netflix.config.sources.URLConfigurationSource |121 |No URLs will be polled as dynamic configuration sources.
+2020-11-09 17:44:36 |INFO  |main |com.netflix.config.sources.URLConfigurationSource |122 |To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-09 17:44:36 |INFO  |main |org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor |181 |Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-09 17:44:36 |INFO  |main |com.alibaba.cloud.sentinel.SentinelWebAutoConfiguration |80 |[Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+2020-11-09 17:44:38 |INFO  |main |org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler |181 |Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-11-09 17:44:38 |INFO  |main |com.alibaba.nacos.client.naming |56 |initializer namespace from System Property :null
+2020-11-09 17:44:38 |INFO  |main |com.alibaba.nacos.client.naming |65 |initializer namespace from System Environment :null
+2020-11-09 17:44:38 |INFO  |main |com.alibaba.nacos.client.naming |75 |initializer namespace from System Property :null
+2020-11-09 17:44:40 |INFO  |main |org.apache.coyote.http11.Http11NioProtocol |173 |Starting ProtocolHandler ["http-nio-8085"]
+2020-11-09 17:44:40 |INFO  |main |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |204 |Tomcat started on port(s): 8085 (http) with context path '/user-server'
+2020-11-09 17:44:40 |INFO  |main |com.alibaba.nacos.client.naming |66 |[BEAT] adding beat: {"cluster":"DEFAULT","ip":"192.168.5.1","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":8085,"scheduled":false,"serviceName":"DEFAULT_GROUP@@user-server","stopped":false,"weight":1.0} to beat map.
+2020-11-09 17:44:40 |INFO  |main |com.alibaba.nacos.client.naming |196 |[REGISTER-SERVICE] 08e0b806-874c-4fb7-afe3-f16e7fdc2086 registering service DEFAULT_GROUP@@user-server with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"192.168.5.1","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":8085,"weight":1.0}
+2020-11-09 17:44:40 |INFO  |main |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |65 |nacos registry, DEFAULT_GROUP user-server 192.168.5.1:8085 register finished
+2020-11-09 17:44:42 |INFO  |main |com.alibaba.nacos.client.config.impl.ClientWorker |197 |[fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] [subscribe] user-server+DEFAULT_GROUP+08e0b806-874c-4fb7-afe3-f16e7fdc2086
+2020-11-09 17:44:42 |INFO  |main |com.alibaba.nacos.client.config.impl.CacheData |92 |[fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] [add-listener] ok, tenant=08e0b806-874c-4fb7-afe3-f16e7fdc2086, dataId=user-server, group=DEFAULT_GROUP, cnt=1
+2020-11-09 17:44:42 |INFO  |main |com.alibaba.nacos.client.config.impl.ClientWorker |197 |[fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] [subscribe] user-server.yaml+DEFAULT_GROUP+08e0b806-874c-4fb7-afe3-f16e7fdc2086
+2020-11-09 17:44:42 |INFO  |main |com.alibaba.nacos.client.config.impl.CacheData |92 |[fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] [add-listener] ok, tenant=08e0b806-874c-4fb7-afe3-f16e7fdc2086, dataId=user-server.yaml, group=DEFAULT_GROUP, cnt=1
+2020-11-09 17:44:42 |INFO  |main |com.alibaba.nacos.client.config.impl.ClientWorker |197 |[fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] [subscribe] user-server-dev.yaml+DEFAULT_GROUP+08e0b806-874c-4fb7-afe3-f16e7fdc2086
+2020-11-09 17:44:42 |INFO  |main |com.alibaba.nacos.client.config.impl.CacheData |92 |[fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] [add-listener] ok, tenant=08e0b806-874c-4fb7-afe3-f16e7fdc2086, dataId=user-server-dev.yaml, group=DEFAULT_GROUP, cnt=1
+2020-11-09 17:44:42 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 17:44:59 |INFO  |http-nio-8085-exec-1 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/user-server] |173 |Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-09 17:44:59 |INFO  |http-nio-8085-exec-1 |org.springframework.web.servlet.DispatcherServlet |525 |Initializing Servlet 'dispatcherServlet'
+2020-11-09 17:44:59 |INFO  |http-nio-8085-exec-1 |org.springframework.web.servlet.DispatcherServlet |547 |Completed initialization in 16 ms
+2020-11-09 17:45:15 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 17:45:45 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 17:46:14 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 17:46:35 |INFO  |SpringContextShutdownHook |org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler |218 |Shutting down ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-11-09 17:46:35 |INFO  |SpringContextShutdownHook |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |80 |De-registering from Nacos Server now...
+2020-11-09 17:46:35 |INFO  |SpringContextShutdownHook |com.alibaba.nacos.client.naming |79 |[BEAT] removing beat: DEFAULT_GROUP@@user-server:192.168.5.1:8085 from beat map.
+2020-11-09 17:46:35 |INFO  |SpringContextShutdownHook |com.alibaba.nacos.client.naming |218 |[DEREGISTER-SERVICE] 08e0b806-874c-4fb7-afe3-f16e7fdc2086 deregistering service DEFAULT_GROUP@@user-server with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceIdGenerator":"simple","ip":"192.168.5.1","ipDeleteTimeout":30000,"metadata":{},"port":8085,"weight":1.0}
+2020-11-09 17:46:35 |INFO  |SpringContextShutdownHook |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |100 |De-registration finished.
+2020-11-09 17:46:35 |INFO  |SpringContextShutdownHook |org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor |218 |Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-09 17:46:44 |ERROR |main |org.springframework.boot.SpringApplication |826 |Application run failed
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [INFO]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [ERROR]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:324)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:288)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:246)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:223)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:76)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:53)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:345)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:140)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.bootstrapServiceContext(BootstrapApplicationListener.java:212)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:117)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:74)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:76)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:53)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:345)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.demo.alibaba.AlibabaNacosUserServerApplication.main(AlibabaNacosUserServerApplication.java:16)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [INFO]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [ERROR]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:169)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithSpecificConfig(AbstractLoggingSystem.java:66)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:57)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:118)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:318)
+	... 26 common frames omitted
+2020-11-09 17:46:44 |ERROR |main |org.springframework.boot.SpringApplication |826 |Application run failed
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [INFO]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [ERROR]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:324)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:288)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:246)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:223)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:76)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:53)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:345)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:140)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.bootstrapServiceContext(BootstrapApplicationListener.java:212)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:117)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:74)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:76)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:53)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:345)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.demo.alibaba.AlibabaNacosUserServerApplication.main(AlibabaNacosUserServerApplication.java:16)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [INFO]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [ERROR]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:169)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithSpecificConfig(AbstractLoggingSystem.java:66)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:57)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:118)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:318)
+	... 26 common frames omitted
+2020-11-09 17:48:12 |INFO  |main |com.alibaba.nacos.client.config.impl.LocalConfigInfoProcessor |195 |LOCAL_SNAPSHOT_PATH:C:\Users\admin\nacos\config
+2020-11-09 17:48:12 |INFO  |main |com.alibaba.nacos.client.config.impl.Limiter |53 |limitTime:5.0
+2020-11-09 17:48:12 |WARN  |main |com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder |87 |Ignore the empty nacos configuration and get it based on dataId[user-server] & group[DEFAULT_GROUP]
+2020-11-09 17:48:12 |WARN  |main |com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder |87 |Ignore the empty nacos configuration and get it based on dataId[user-server.yaml] & group[DEFAULT_GROUP]
+2020-11-09 17:48:12 |INFO  |main |com.alibaba.nacos.client.config.utils.JVMUtil |47 |isMultiInstance:false
+2020-11-09 17:48:12 |INFO  |main |org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration |105 |Located property source: [BootstrapPropertySource {name='bootstrapProperties-user-server-dev.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-user-server.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-user-server,DEFAULT_GROUP'}]
+2020-11-09 17:48:14 |INFO  |main |org.springframework.cloud.context.scope.GenericScope |295 |BeanFactory id=80d6d2dc-0c4c-3ce3-8714-c88df2d2f942
+2020-11-09 17:48:14 |INFO  |main |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |330 |Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-09 17:48:15 |INFO  |main |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |330 |Bean 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration' of type [com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-09 17:48:15 |INFO  |main |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |92 |Tomcat initialized with port(s): 8085 (http)
+2020-11-09 17:48:15 |INFO  |main |org.apache.coyote.http11.Http11NioProtocol |173 |Initializing ProtocolHandler ["http-nio-8085"]
+2020-11-09 17:48:15 |INFO  |main |org.apache.catalina.core.StandardService |173 |Starting service [Tomcat]
+2020-11-09 17:48:15 |INFO  |main |org.apache.catalina.core.StandardEngine |173 |Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-11-09 17:48:16 |INFO  |main |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/user-server] |173 |Initializing Spring embedded WebApplicationContext
+2020-11-09 17:48:16 |INFO  |main |org.springframework.web.context.ContextLoader |284 |Root WebApplicationContext: initialization completed in 3071 ms
+2020-11-09 17:48:16 |INFO  |main |org.redisson.Version |41 |Redisson 3.13.4
+2020-11-09 17:48:19 |INFO  |redisson-netty-2-4 |org.redisson.connection.pool.MasterPubSubConnectionPool |167 |1 connections initialized for /127.0.0.1:6379
+2020-11-09 17:48:19 |INFO  |redisson-netty-2-3 |org.redisson.connection.pool.MasterConnectionPool |167 |10 connections initialized for /127.0.0.1:6379
+2020-11-09 17:48:19 |WARN  |main |com.netflix.config.sources.URLConfigurationSource |121 |No URLs will be polled as dynamic configuration sources.
+2020-11-09 17:48:19 |INFO  |main |com.netflix.config.sources.URLConfigurationSource |122 |To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-09 17:48:19 |WARN  |main |com.netflix.config.sources.URLConfigurationSource |121 |No URLs will be polled as dynamic configuration sources.
+2020-11-09 17:48:19 |INFO  |main |com.netflix.config.sources.URLConfigurationSource |122 |To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-09 17:48:19 |INFO  |main |org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor |181 |Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-09 17:48:20 |INFO  |main |com.alibaba.cloud.sentinel.SentinelWebAutoConfiguration |80 |[Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+2020-11-09 17:48:21 |INFO  |main |org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler |181 |Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-11-09 17:48:21 |INFO  |main |com.alibaba.nacos.client.naming |56 |initializer namespace from System Property :null
+2020-11-09 17:48:21 |INFO  |main |com.alibaba.nacos.client.naming |65 |initializer namespace from System Environment :null
+2020-11-09 17:48:21 |INFO  |main |com.alibaba.nacos.client.naming |75 |initializer namespace from System Property :null
+2020-11-09 17:48:24 |INFO  |main |org.apache.coyote.http11.Http11NioProtocol |173 |Starting ProtocolHandler ["http-nio-8085"]
+2020-11-09 17:48:24 |INFO  |main |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |204 |Tomcat started on port(s): 8085 (http) with context path '/user-server'
+2020-11-09 17:48:24 |INFO  |main |com.alibaba.nacos.client.naming |66 |[BEAT] adding beat: {"cluster":"DEFAULT","ip":"192.168.5.1","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":8085,"scheduled":false,"serviceName":"DEFAULT_GROUP@@user-server","stopped":false,"weight":1.0} to beat map.
+2020-11-09 17:48:24 |INFO  |main |com.alibaba.nacos.client.naming |196 |[REGISTER-SERVICE] 08e0b806-874c-4fb7-afe3-f16e7fdc2086 registering service DEFAULT_GROUP@@user-server with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"192.168.5.1","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":8085,"weight":1.0}
+2020-11-09 17:48:24 |INFO  |main |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |65 |nacos registry, DEFAULT_GROUP user-server 192.168.5.1:8085 register finished
+2020-11-09 17:48:25 |INFO  |main |com.alibaba.nacos.client.config.impl.ClientWorker |197 |[fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] [subscribe] user-server+DEFAULT_GROUP+08e0b806-874c-4fb7-afe3-f16e7fdc2086
+2020-11-09 17:48:25 |INFO  |main |com.alibaba.nacos.client.config.impl.CacheData |92 |[fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] [add-listener] ok, tenant=08e0b806-874c-4fb7-afe3-f16e7fdc2086, dataId=user-server, group=DEFAULT_GROUP, cnt=1
+2020-11-09 17:48:25 |INFO  |main |com.alibaba.nacos.client.config.impl.ClientWorker |197 |[fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] [subscribe] user-server.yaml+DEFAULT_GROUP+08e0b806-874c-4fb7-afe3-f16e7fdc2086
+2020-11-09 17:48:25 |INFO  |main |com.alibaba.nacos.client.config.impl.CacheData |92 |[fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] [add-listener] ok, tenant=08e0b806-874c-4fb7-afe3-f16e7fdc2086, dataId=user-server.yaml, group=DEFAULT_GROUP, cnt=1
+2020-11-09 17:48:25 |INFO  |main |com.alibaba.nacos.client.config.impl.ClientWorker |197 |[fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] [subscribe] user-server-dev.yaml+DEFAULT_GROUP+08e0b806-874c-4fb7-afe3-f16e7fdc2086
+2020-11-09 17:48:25 |INFO  |main |com.alibaba.nacos.client.config.impl.CacheData |92 |[fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] [add-listener] ok, tenant=08e0b806-874c-4fb7-afe3-f16e7fdc2086, dataId=user-server-dev.yaml, group=DEFAULT_GROUP, cnt=1
+2020-11-09 17:48:25 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 17:48:25 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 17:48:34 |INFO  |http-nio-8085-exec-1 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/user-server] |173 |Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-09 17:48:34 |INFO  |http-nio-8085-exec-1 |org.springframework.web.servlet.DispatcherServlet |525 |Initializing Servlet 'dispatcherServlet'
+2020-11-09 17:48:34 |INFO  |http-nio-8085-exec-1 |org.springframework.web.servlet.DispatcherServlet |547 |Completed initialization in 18 ms
+2020-11-09 17:48:55 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 17:49:24 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 17:49:54 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 17:50:23 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 17:50:53 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 17:51:22 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 17:51:52 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 17:52:28 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 17:52:57 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 17:54:13 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 17:54:13 |INFO  |com.alibaba.nacos.naming.beat.sender |com.alibaba.nacos.client.naming |196 |[REGISTER-SERVICE] 08e0b806-874c-4fb7-afe3-f16e7fdc2086 registering service DEFAULT_GROUP@@user-server with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"192.168.5.1","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":8085,"serviceName":"DEFAULT_GROUP@@user-server","weight":1.0}
+2020-11-09 17:54:42 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 17:55:12 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 17:55:50 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 17:56:27 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 17:56:38 |INFO  |SpringContextShutdownHook |org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler |218 |Shutting down ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-11-09 17:56:38 |INFO  |SpringContextShutdownHook |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |80 |De-registering from Nacos Server now...
+2020-11-09 17:56:38 |INFO  |SpringContextShutdownHook |com.alibaba.nacos.client.naming |79 |[BEAT] removing beat: DEFAULT_GROUP@@user-server:192.168.5.1:8085 from beat map.
+2020-11-09 17:56:38 |INFO  |SpringContextShutdownHook |com.alibaba.nacos.client.naming |218 |[DEREGISTER-SERVICE] 08e0b806-874c-4fb7-afe3-f16e7fdc2086 deregistering service DEFAULT_GROUP@@user-server with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceIdGenerator":"simple","ip":"192.168.5.1","ipDeleteTimeout":30000,"metadata":{},"port":8085,"weight":1.0}
+2020-11-09 17:56:38 |INFO  |SpringContextShutdownHook |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |100 |De-registration finished.
+2020-11-09 17:56:38 |INFO  |SpringContextShutdownHook |org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor |218 |Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-09 17:56:52 |INFO  |main |com.alibaba.nacos.client.config.impl.LocalConfigInfoProcessor |195 |LOCAL_SNAPSHOT_PATH:C:\Users\admin\nacos\config
+2020-11-09 17:56:52 |INFO  |main |com.alibaba.nacos.client.config.impl.Limiter |53 |limitTime:5.0
+2020-11-09 17:56:52 |WARN  |main |com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder |87 |Ignore the empty nacos configuration and get it based on dataId[user-server] & group[DEFAULT_GROUP]
+2020-11-09 17:56:52 |WARN  |main |com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder |87 |Ignore the empty nacos configuration and get it based on dataId[user-server.yaml] & group[DEFAULT_GROUP]
+2020-11-09 17:56:52 |INFO  |main |com.alibaba.nacos.client.config.utils.JVMUtil |47 |isMultiInstance:false
+2020-11-09 17:56:52 |INFO  |main |org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration |105 |Located property source: [BootstrapPropertySource {name='bootstrapProperties-user-server-dev.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-user-server.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-user-server,DEFAULT_GROUP'}]
+2020-11-09 17:56:53 |INFO  |main |org.springframework.cloud.context.scope.GenericScope |295 |BeanFactory id=80d6d2dc-0c4c-3ce3-8714-c88df2d2f942
+2020-11-09 17:56:54 |INFO  |main |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |330 |Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-09 17:56:54 |INFO  |main |org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker |330 |Bean 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration' of type [com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-09 17:56:55 |INFO  |main |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |92 |Tomcat initialized with port(s): 8085 (http)
+2020-11-09 17:56:55 |INFO  |main |org.apache.coyote.http11.Http11NioProtocol |173 |Initializing ProtocolHandler ["http-nio-8085"]
+2020-11-09 17:56:55 |INFO  |main |org.apache.catalina.core.StandardService |173 |Starting service [Tomcat]
+2020-11-09 17:56:55 |INFO  |main |org.apache.catalina.core.StandardEngine |173 |Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-11-09 17:56:55 |INFO  |main |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/user-server] |173 |Initializing Spring embedded WebApplicationContext
+2020-11-09 17:56:55 |INFO  |main |org.springframework.web.context.ContextLoader |284 |Root WebApplicationContext: initialization completed in 3156 ms
+2020-11-09 17:56:55 |INFO  |main |org.redisson.Version |41 |Redisson 3.13.4
+2020-11-09 17:56:58 |INFO  |redisson-netty-2-2 |org.redisson.connection.pool.MasterConnectionPool |167 |10 connections initialized for /127.0.0.1:6379
+2020-11-09 17:56:58 |INFO  |redisson-netty-2-3 |org.redisson.connection.pool.MasterPubSubConnectionPool |167 |1 connections initialized for /127.0.0.1:6379
+2020-11-09 17:56:58 |WARN  |main |com.netflix.config.sources.URLConfigurationSource |121 |No URLs will be polled as dynamic configuration sources.
+2020-11-09 17:56:58 |INFO  |main |com.netflix.config.sources.URLConfigurationSource |122 |To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-09 17:56:58 |WARN  |main |com.netflix.config.sources.URLConfigurationSource |121 |No URLs will be polled as dynamic configuration sources.
+2020-11-09 17:56:58 |INFO  |main |com.netflix.config.sources.URLConfigurationSource |122 |To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-09 17:56:59 |INFO  |main |org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor |181 |Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-09 17:56:59 |INFO  |main |com.alibaba.cloud.sentinel.SentinelWebAutoConfiguration |80 |[Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+2020-11-09 17:57:01 |INFO  |main |org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler |181 |Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-11-09 17:57:01 |INFO  |main |com.alibaba.nacos.client.naming |56 |initializer namespace from System Property :null
+2020-11-09 17:57:01 |INFO  |main |com.alibaba.nacos.client.naming |65 |initializer namespace from System Environment :null
+2020-11-09 17:57:01 |INFO  |main |com.alibaba.nacos.client.naming |75 |initializer namespace from System Property :null
+2020-11-09 17:57:02 |INFO  |main |org.apache.coyote.http11.Http11NioProtocol |173 |Starting ProtocolHandler ["http-nio-8085"]
+2020-11-09 17:57:02 |INFO  |main |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |204 |Tomcat started on port(s): 8085 (http) with context path '/user-server'
+2020-11-09 17:57:02 |INFO  |main |com.alibaba.nacos.client.naming |66 |[BEAT] adding beat: {"cluster":"DEFAULT","ip":"192.168.5.1","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":8085,"scheduled":false,"serviceName":"DEFAULT_GROUP@@user-server","stopped":false,"weight":1.0} to beat map.
+2020-11-09 17:57:03 |INFO  |main |com.alibaba.nacos.client.naming |196 |[REGISTER-SERVICE] 08e0b806-874c-4fb7-afe3-f16e7fdc2086 registering service DEFAULT_GROUP@@user-server with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"192.168.5.1","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":8085,"weight":1.0}
+2020-11-09 17:57:03 |INFO  |main |com.alibaba.cloud.nacos.registry.NacosServiceRegistry |65 |nacos registry, DEFAULT_GROUP user-server 192.168.5.1:8085 register finished
+2020-11-09 17:57:04 |INFO  |main |com.alibaba.nacos.client.config.impl.ClientWorker |197 |[fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] [subscribe] user-server+DEFAULT_GROUP+08e0b806-874c-4fb7-afe3-f16e7fdc2086
+2020-11-09 17:57:04 |INFO  |main |com.alibaba.nacos.client.config.impl.CacheData |92 |[fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] [add-listener] ok, tenant=08e0b806-874c-4fb7-afe3-f16e7fdc2086, dataId=user-server, group=DEFAULT_GROUP, cnt=1
+2020-11-09 17:57:04 |INFO  |main |com.alibaba.nacos.client.config.impl.ClientWorker |197 |[fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] [subscribe] user-server.yaml+DEFAULT_GROUP+08e0b806-874c-4fb7-afe3-f16e7fdc2086
+2020-11-09 17:57:04 |INFO  |main |com.alibaba.nacos.client.config.impl.CacheData |92 |[fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] [add-listener] ok, tenant=08e0b806-874c-4fb7-afe3-f16e7fdc2086, dataId=user-server.yaml, group=DEFAULT_GROUP, cnt=1
+2020-11-09 17:57:04 |INFO  |main |com.alibaba.nacos.client.config.impl.ClientWorker |197 |[fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] [subscribe] user-server-dev.yaml+DEFAULT_GROUP+08e0b806-874c-4fb7-afe3-f16e7fdc2086
+2020-11-09 17:57:04 |INFO  |main |com.alibaba.nacos.client.config.impl.CacheData |92 |[fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086] [add-listener] ok, tenant=08e0b806-874c-4fb7-afe3-f16e7fdc2086, dataId=user-server-dev.yaml, group=DEFAULT_GROUP, cnt=1
+2020-11-09 17:57:04 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 17:57:33 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 17:57:36 |INFO  |http-nio-8085-exec-1 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/user-server] |173 |Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-09 17:57:36 |INFO  |http-nio-8085-exec-1 |org.springframework.web.servlet.DispatcherServlet |525 |Initializing Servlet 'dispatcherServlet'
+2020-11-09 17:57:36 |INFO  |http-nio-8085-exec-1 |org.springframework.web.servlet.DispatcherServlet |547 |Completed initialization in 18 ms
+2020-11-09 17:58:03 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 17:58:33 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 17:59:02 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 17:59:32 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 18:00:01 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 18:00:31 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 18:01:00 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 18:01:30 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 18:01:59 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 18:02:29 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 18:02:58 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 18:03:28 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 18:03:57 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 18:04:27 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 18:04:56 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 18:05:26 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
+2020-11-09 18:05:55 |INFO  |com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-08e0b806-874c-4fb7-afe3-f16e7fdc2086 |com.alibaba.nacos.client.config.impl.ClientWorker |522 |get changedGroupKeys:[]
