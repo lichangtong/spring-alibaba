@@ -1,8 +1,7 @@
 package com.demo.alibaba.result;
 
-import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 /**
  * @Program: IntelliJ IDEA
@@ -11,11 +10,10 @@ import lombok.NoArgsConstructor;
  * @Author: lichangtong
  * @Date: 2020-09-03 18:16
  */
+@Builder(toBuilder = true)
 @Data
-@AllArgsConstructor
-@NoArgsConstructor
 public class ApiResult<T> {
-    private String message;
-    private Integer code;
-    private T data;
+	private String message;
+	private Integer code;
+	private T data;
 }

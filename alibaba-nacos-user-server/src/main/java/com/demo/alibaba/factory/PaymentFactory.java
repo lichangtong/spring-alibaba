@@ -61,15 +61,6 @@ public class PaymentFactory {
 	}
 
 	private static ApiResult returnApiResult(boolean bo) {
-		ApiResult apiResult = new ApiResult();
-		if (bo) {
-			apiResult.setCode(200);
-			apiResult.setMessage("OK");
-			return apiResult;
-		} else {
-			apiResult.setCode(400101);
-			apiResult.setMessage("channelCode 参数错误");
-			return apiResult;
-		}
+		return ApiResult.builder().build();
 	}
 }
