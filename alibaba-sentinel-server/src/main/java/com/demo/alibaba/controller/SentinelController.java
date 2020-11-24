@@ -1,8 +1,8 @@
 package com.demo.alibaba.controller;
 
-import com.demo.alibaba.service.impl.HelloService;
 import com.demo.alibaba.entity.User;
 import com.demo.alibaba.result.ApiResult;
+import com.demo.alibaba.service.impl.HelloService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -26,7 +26,7 @@ public class SentinelController {
     HelloService helloService;
     @PostMapping("/hello")
     public ApiResult helloSentinel(@Valid @RequestBody User user) {
-        ApiResult apiResult = new ApiResult();
+        ApiResult apiResult = ApiResult.builder().build();
         apiResult.setCode(200);
         apiResult.setMessage("请求成功 = "+helloService.sayHello());
         apiResult.setData(user);

@@ -37,7 +37,7 @@ public class UserController {
 
     @PostMapping(value = "/query")
     public ApiResult queryUser() {
-        ApiResult apiResult = new ApiResult();
+        ApiResult apiResult = ApiResult.builder().build();
         apiResult.setMessage("SUCCESS");
         apiResult.setCode(200);
 
@@ -66,7 +66,7 @@ public class UserController {
      */
     @PostMapping(value = "/query2")
     public ApiResult query2() {
-        ApiResult apiResult = new ApiResult();
+		ApiResult apiResult = ApiResult.builder().build();
         apiResult.setMessage("SUCCESS");
         apiResult.setCode(200);
         return apiResult;
