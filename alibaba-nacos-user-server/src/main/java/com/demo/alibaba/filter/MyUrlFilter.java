@@ -1,15 +1,14 @@
 package com.demo.alibaba.filter;
 
-import com.alibaba.dubbo.common.utils.CollectionUtils;
 import com.alibaba.dubbo.common.utils.IOUtils;
 import com.alibaba.fastjson.JSON;
 import com.demo.alibaba.result.ApiResult;
 import lombok.extern.slf4j.Slf4j;
 import org.redisson.api.RedissonClient;
+import org.slf4j.MDC;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.http.HttpMethod;
-import org.springframework.web.multipart.commons.CommonsMultipartResolver;
+import org.springframework.stereotype.Component;
 
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
@@ -26,7 +25,7 @@ import java.util.*;
  * @Author: lichangtong
  * @Date: 2020-09-21 14:14
  */
-//@Component
+@Component
 @Slf4j
 //@RefreshScope
 public class MyUrlFilter implements Filter {
@@ -87,7 +86,14 @@ public class MyUrlFilter implements Filter {
 
 	@Override
 	public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
-
+		try {
+			MDC.put("lichangtong", UUID.randomUUID().toString());
+			filterChain.doFilter(servletRequest, servletResponse);
+		} finally {
+			MDC.clear();
+			//避免tomcat回收线程造成过期数据
+		}
+		/*MDC.put("lichangtong",UUID.randomUUID().toString());
 		HttpServletRequest request = (HttpServletRequest) servletRequest;
 		String token = request.getHeader("token");
 		String sign = request.getHeader("sign");
@@ -114,7 +120,7 @@ public class MyUrlFilter implements Filter {
 			} else {
 				returnResult(servletResponse, "签名验证失败，请确认签名是否正确", 400);
 			}
-		}
+		}*/
 	}
 
 	@Override

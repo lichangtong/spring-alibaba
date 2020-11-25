@@ -1,9 +1,11 @@
 package com.demo.alibaba.controller;
 
+import com.alibaba.fastjson.JSON;
 import com.demo.alibaba.config.RedissonClintUtil;
 import com.demo.alibaba.config.RedissonProperties;
 import com.demo.alibaba.entity.User;
 import com.demo.alibaba.result.ApiResult;
+import lombok.extern.slf4j.Slf4j;
 import org.redisson.api.RBucket;
 import org.redisson.api.RLock;
 import org.redisson.api.RedissonClient;
@@ -24,57 +26,59 @@ import java.util.concurrent.TimeUnit;
 
 @RestController
 @RequestMapping("/user")
+@Slf4j
 public class UserController {
-    //    @Autowired
+	//    @Autowired
 //    @Qualifier("userService")
 //    IUserService userService;
 
-    @Autowired
-    private RedissonClintUtil redissonClintUtil;
+	@Autowired
+	private RedissonClintUtil redissonClintUtil;
 
-    @Autowired
-    private RedissonClient redissonClient;
+	@Autowired
+	private RedissonClient redissonClient;
 
-    @PostMapping(value = "/query")
-    public ApiResult queryUser() {
-        ApiResult apiResult = ApiResult.builder().build();
-        apiResult.setMessage("SUCCESS");
-        apiResult.setCode(200);
+	@PostMapping(value = "/query")
+	public ApiResult queryUser() {
+		ApiResult apiResult = ApiResult.builder().build();
+		apiResult.setMessage("SUCCESS");
+		apiResult.setCode(200);
 
 //        userService.queryUserById(new User());
-        System.out.println(redissonClintUtil.toString());
-        RBucket bucket = redissonClient.getBucket("nihao");
-        if (bucket.isExists()) {
-            bucket.get();
-        } else {
-            bucket.set("这是一个测试！！！");
-        }
-        apiResult.setData(new User("lisi", "13213121314", "北京凯旋" + bucket.get()));
+		System.out.println(redissonClintUtil.toString());
+		RBucket bucket = redissonClient.getBucket("nihao");
+		if (bucket.isExists()) {
+			bucket.get();
+		} else {
+			bucket.set("这是一个测试！！！");
+		}
+		apiResult.setData(new User("lisi", "13213121314", "北京凯旋" + bucket.get()));
 
-        RLock rLock = redissonClient.getLock("lisiiii");
-        System.out.println(rLock.isLocked());
+		RLock rLock = redissonClient.getLock("lisiiii");
+		System.out.println(rLock.isLocked());
 
-        rLock.lock(10, TimeUnit.SECONDS);
+		rLock.lock(10, TimeUnit.SECONDS);
 
-        rLock.unlock();
-        return apiResult;
-    }
+		rLock.unlock();
+		return apiResult;
+	}
 
-    /**
-     *
-     * @return
-     */
-    @PostMapping(value = "/query2")
-    public ApiResult query2() {
+	/**
+	 * @return
+	 */
+	@PostMapping(value = "/query2")
+	public ApiResult query2() {
+		log.info(JSON.toJSONString(new User("lisi", "13213121314", "北京凯旋")));
 		ApiResult apiResult = ApiResult.builder().build();
-        apiResult.setMessage("SUCCESS");
-        apiResult.setCode(200);
-        return apiResult;
-    }
+		apiResult.setMessage("SUCCESS");
+		apiResult.setCode(200);
+		log.info(JSON.toJSONString(apiResult));
+		return apiResult;
+	}
 
-    public String test(RedissonProperties properties) {
+	public String test(RedissonProperties properties) {
 
-        return properties.toString();
-    }
+		return properties.toString();
+	}
 
 }
