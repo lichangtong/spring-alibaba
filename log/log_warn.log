@@ -1,0 +1,10 @@
+2020-11-26 16:29:52.097 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder  Ignore the empty nacos configuration and get it based on dataId[user-server] & group[DEFAULT_GROUP]
+2020-11-26 16:29:52.103 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder  Ignore the empty nacos configuration and get it based on dataId[user-server.yaml] & group[DEFAULT_GROUP]
+2020-11-26 16:29:53.458 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  No MyBatis mapper was found in '[com.demo.alibaba]' package. Please check your configuration.
+2020-11-26 16:29:57.947 [main] WARN  com.netflix.config.sources.URLConfigurationSource  No URLs will be polled as dynamic configuration sources.
+2020-11-26 16:29:57.959 [main] WARN  com.netflix.config.sources.URLConfigurationSource  No URLs will be polled as dynamic configuration sources.
+2020-11-26 16:32:35.438 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder  Ignore the empty nacos configuration and get it based on dataId[user-server] & group[DEFAULT_GROUP]
+2020-11-26 16:32:35.444 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder  Ignore the empty nacos configuration and get it based on dataId[user-server.yaml] & group[DEFAULT_GROUP]
+2020-11-26 16:32:36.779 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  No MyBatis mapper was found in '[com.demo.alibaba]' package. Please check your configuration.
+2020-11-26 16:32:41.122 [main] WARN  com.netflix.config.sources.URLConfigurationSource  No URLs will be polled as dynamic configuration sources.
+2020-11-26 16:32:41.131 [main] WARN  com.netflix.config.sources.URLConfigurationSource  No URLs will be polled as dynamic configuration sources.
