@@ -90,7 +90,11 @@
             <groupId>org.apache.velocity</groupId>
             <artifactId>velocity-engine-core</artifactId>
         </dependency>
-
+        <dependency>
+            <groupId>com.hymm</groupId>
+            <artifactId>hymm-log</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
 
     </dependencies>
 

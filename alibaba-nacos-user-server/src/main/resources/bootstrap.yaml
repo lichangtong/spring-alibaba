@@ -6,10 +6,6 @@ server:
   group: DEFAULT_GROUP
   username: alibaba
   password: 123456
-
-
-#  servlet:
-#    context-path: /user-server
 spring:
   datasource:
     dynamic:

@@ -8,8 +8,6 @@ import org.redisson.api.RedissonClient;
 import org.slf4j.MDC;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.core.annotation.Order;
-import org.springframework.stereotype.Component;
 
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
@@ -26,10 +24,11 @@ import java.util.*;
  * @Author: lichangtong
  * @Date: 2020-09-21 14:14
  */
-@Component
+//@Component
 @Slf4j
 //@RefreshScope
-@Order(2)
+//@Order(2)
+//@WebFilter
 public class MyUrlFilter implements Filter {
 
 	@Value("#{'${ignored.filter.path:}'.empty ? null : '${ignored.filter.path:}'.split(',')}")

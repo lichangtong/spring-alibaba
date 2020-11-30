@@ -1,17 +1,15 @@
 package com.demo.alibaba;
 
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
+import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 @EnableDiscoveryClient
 @EnableFeignClients
-@EnableConfigurationProperties
-@Slf4j
+@ComponentScan({"com.hymm.*", "com.demo.alibaba.*"})
 public class AlibabaNacosUserServerApplication {
 
     public static void main(String[] args) {
