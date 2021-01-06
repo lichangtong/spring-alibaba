@@ -7,41 +7,55 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="consumer" />
-        <module name="base-entity" />
+        <module name="demo (1) (com.demo.alibaba.consumer)" />
+        <module name="user-server" />
+        <module name="alibaba-nacos-user-server" />
         <module name="payment-service" />
+        <module name="base-entity" />
         <module name="common" />
+        <module name="demo (2)" />
         <module name="provider" />
+        <module name="alibaba-nacos-consumer-server" />
+        <module name="demo (4) (com.demo.alibaba.provider)" />
+        <module name="alibaba-nacos-base-entity" />
+        <module name="demo (3)" />
+        <module name="alibaba-sentinel-server" />
+        <module name="alibaba-nacos-provider-server" />
+        <module name="consumer" />
         <module name="gateway" />
         <module name="sentinel-server" />
-        <module name="alibaba-nacos-provider-server" />
-        <module name="user-server" />
-        <module name="alibaba-nacos-consumer-server" />
+        <module name="spring-alibaba-common" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="alibaba-nacos-gateway" target="1.8" />
       <module name="alibaba-nacos-payment-service" target="1.8" />
       <module name="demo (1)" target="1.8" />
-      <module name="demo (2)" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="alibaba-nacos-base-entity" options="-parameters" />
       <module name="alibaba-nacos-consumer-server" options="-parameters" />
       <module name="alibaba-nacos-gateway" options="-parameters" />
       <module name="alibaba-nacos-payment-service" options="-parameters" />
       <module name="alibaba-nacos-provider-server" options="-parameters" />
+      <module name="alibaba-nacos-user-server" options="-parameters" />
+      <module name="alibaba-sentinel-server" options="-parameters" />
       <module name="base-entity" options="-parameters" />
       <module name="common" options="-parameters" />
       <module name="consumer" options="-parameters" />
       <module name="demo (1)" options="-parameters" />
+      <module name="demo (1) (com.demo.alibaba.consumer)" options="-parameters" />
       <module name="demo (2)" options="-parameters" />
+      <module name="demo (3)" options="-parameters" />
+      <module name="demo (4) (com.demo.alibaba.provider)" options="-parameters" />
       <module name="gateway" options="-parameters" />
       <module name="payment-service" options="-parameters" />
       <module name="provider" options="-parameters" />
       <module name="sentinel-server" options="-parameters" />
       <module name="spring-alibaba" options="-parameters" />
+      <module name="spring-alibaba-common" options="-parameters" />
       <module name="user-server" options="-parameters" />
     </option>
   </component>
